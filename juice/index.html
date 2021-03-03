@@ -1,0 +1,1814 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<title>juice</title>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/number_plugin.css">
+  <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+
+  <header class="header">
+    <div class="container header__container">
+      <div class="header-top">
+        <div class="header-top__inner">
+          <div class="header-top__links">
+            <a class="logo" href="#">
+              <img class="logo-img" src="images/logo.svg" alt="logo image">
+            </a>
+            <button class="header-top__btn">
+              <svg class="svg__1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="36pt" height="41pt" viewBox="0 0 36 41" version="1.1">
+                <g>
+                  <path style=" stroke:none;fill-rule:nonzero;fill:#fff;"
+                    d="M 1.285156 10.570312 L 34.714844 10.570312 C 35.425781 10.570312 36 9.996094 36 9.289062 L 36 6.085938 C 36 5.378906 35.425781 4.804688 34.714844 4.804688 L 1.285156 4.804688 C 0.574219 4.804688 0 5.378906 0 6.085938 L 0 9.289062 C 0 9.996094 0.574219 10.570312 1.285156 10.570312 Z M 1.285156 23.382812 L 34.714844 23.382812 C 35.425781 23.382812 36 22.808594 36 22.101562 L 36 18.898438 C 36 18.191406 35.425781 17.617188 34.714844 17.617188 L 1.285156 17.617188 C 0.574219 17.617188 0 18.191406 0 18.898438 L 0 22.101562 C 0 22.808594 0.574219 23.382812 1.285156 23.382812 Z M 1.285156 36.195312 L 34.714844 36.195312 C 35.425781 36.195312 36 35.621094 36 34.914062 L 36 31.710938 C 36 31.003906 35.425781 30.429688 34.714844 30.429688 L 1.285156 30.429688 C 0.574219 30.429688 0 31.003906 0 31.710938 L 0 34.914062 C 0 35.621094 0.574219 36.195312 1.285156 36.195312 Z M 1.285156 36.195312 " />
+                </g>
+              </svg>
+              <svg class="svg__2" width="44" height="61" viewBox="0 0 44 61" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 2L33.2934 29.3233L2 59.4491" stroke="#131212" stroke-width="3" />
+                <path d="M9.70654 2L41 29.3233L9.70654 59.4491" stroke="#131212" stroke-width="3" />
+              </svg>
+            </button>
+          </div>
+          <nav class="menu">
+            <ul class="menu-list">
+              <li class="menu-list__item">
+                <a class="menu-list__link" href="#">
+                  Каталог
+                </a>
+              </li>
+              <li class="menu-list__item">
+                <a class="menu-list__link" href="#">
+                  Отзывы
+                </a>
+              </li>
+              <li class="menu-list__item">
+                <a class="menu-list__link" href="#">
+                  Контакты
+                </a>
+              </li>
+              <li class="menu-list__item">
+                <a class="menu-list__link" href="#">
+                  О нас
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header-top__connect">
+            <a class="header-top__phone" href="tel:0683739307">068-37-39-307</a>
+            <a class="header-top__cart-link" href="#">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <rect width="36" height="36" fill="url(#pattern0)" />
+                <defs>
+                  <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0" transform="scale(0.0078125)" />
+                  </pattern>
+                  <image id="image0" width="128" height="128"
+                    xlink:href="data:image/png;base64,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" />
+                </defs>
+              </svg>
+            </a>
+          </div>
+
+        </div>
+      </div>
+      <div class="header-bottom">
+        <div class="header-bottom__inner">
+          <div class="header-bottom__title-box">
+            <div class="header-bottom__title-1">Juice</div>
+            <div class="header-bottom__title-2">Drinkis</div>
+          </div>
+          <div class="header-bottom__text">
+            Изготовление и продажа натуральных напитков, из свежих фруктов и ягод, без добавления консервантов
+          </div>
+          <div class="header-bottom__connect-box">
+            <div class="header-bottom__connect-img__box">
+              <img class="header-bottom__connect-img" src="images/swipe.svg" alt="">
+            </div>
+            <a href="#" class="header-bottom__connect-link">Попробовать</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="why">
+      <div class="container">
+        <div class="why__inner">
+          <div class="why__title">Почему именно мы?</div>
+          <p class="why__text">
+            Компания JuiceDrinkis -
+            одна из лучших в своем
+            роде и отвечает за качество.
+            Мы ценим наших покупателей
+            и она ценят нас.Наши продукты
+            всегда проходят проверку
+            и качественный осмотр и чистку
+          </p>
+          <p class="why__text">
+            Мы уверены что вы оцените наш
+            товар и не один раз.Витамины
+            неотъемлемая часть жизни,и
+            мы сможем вам угодить в это
+          </p>
+          <p class="why__text">
+            С уважением <span>Администрация</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="stock">
+      <div class="container">
+        <div class="stock__title">Наш ассортимент</div>
+        <div class="stock__inner">
+          <div class="stock-slider">
+            <div class="stock-items">
+
+              <div class="stock-item">
+                <div class="stock-item__descr">
+                  <div class="stock-item__img-box">
+                    <img class="stock-item__img" src="images/stock/1.png" alt="item image">
+                  </div>
+                  <div class="stock-item__name">Яблоко - лайм</div>
+                  <div class="stock-item__size-box">
+                    <div class="stock-item__size">0,5 л</div>
+                    <div class="stock-item__size">1 л</div>
+                  </div>
+                  <div class="stock-item__num-box">
+                    <input class="stock-item__number" type="number" value="1"></input>
+                    <div class="stock-item__price">100 грн</div>
+                  </div>
+                </div>
+                <div class="stock-item__add-box">
+                  <a class="stock-item__add" href="#">Добавить в корзину</a>
+                </div>
+              </div>
+
+              <div class="stock-item">
+                <div class="stock-item__descr">
+                  <div class="stock-item__img-box">
+                    <img class="stock-item__img" src="images/stock/2.png" alt="item image">
+                  </div>
+                  <div class="stock-item__name">Апельсин-манго</div>
+                  <div class="stock-item__size-box">
+                    <div class="stock-item__size">0,5 л</div>
+                    <div class="stock-item__size">1 л</div>
+                  </div>
+                  <div class="stock-item__num-box">
+                    <input class="stock-item__number" type="number" value="1"></input>
+                    <div class="stock-item__price">120 грн</div>
+                  </div>
+                </div>
+                <div class="stock-item__add-box">
+                  <a class="stock-item__add" href="#">Добавить в корзину</a>
+                </div>
+              </div>
+
+              <div class="stock-item">
+                <div class="stock-item__descr">
+                  <div class="stock-item__img-box">
+                    <img class="stock-item__img" src="images/stock/3.png" alt="item image">
+                  </div>
+                  <div class="stock-item__name">Лимон</div>
+                  <div class="stock-item__size-box">
+                    <div class="stock-item__size">0,5 л</div>
+                    <div class="stock-item__size">1 л</div>
+                  </div>
+                  <div class="stock-item__num-box">
+                    <input class="stock-item__number" type="number" value="1"></input>
+                    <div class="stock-item__price">100 грн</div>
+                  </div>
+                </div>
+                <div class="stock-item__add-box">
+                  <a class="stock-item__add" href="#">Добавить в корзину</a>
+                </div>
+              </div>
+
+              <div class="stock-item">
+                <div class="stock-item__descr">
+                  <div class="stock-item__img-box">
+                    <img class="stock-item__img" src="images/stock/4.png" alt="item image">
+                  </div>
+                  <div class="stock-item__name">Вишня</div>
+                  <div class="stock-item__size-box">
+                    <div class="stock-item__size">0,5 л</div>
+                    <div class="stock-item__size">1 л</div>
+                  </div>
+                  <div class="stock-item__num-box">
+                    <input class="stock-item__number" type="number" value="1"></input>
+                    <div class="stock-item__price">140 грн</div>
+                  </div>
+                </div>
+                <div class="stock-item__add-box">
+                  <a class="stock-item__add" href="#">Добавить в корзину</a>
+                </div>
+              </div>
+
+              <div class="stock-item">
+                <div class="stock-item__descr">
+                  <div class="stock-item__img-box">
+                    <img class="stock-item__img" src="images/stock/5.png" alt="item image">
+                  </div>
+                  <div class="stock-item__name">Клубника</div>
+                  <div class="stock-item__size-box">
+                    <div class="stock-item__size">0,5 л</div>
+                    <div class="stock-item__size">1 л</div>
+                  </div>
+                  <div class="stock-item__num-box">
+                    <input class="stock-item__number" type="number" value="1"></input>
+                    <div class="stock-item__price">100 грн</div>
+                  </div>
+                </div>
+                <div class="stock-item__add-box">
+                  <a class="stock-item__add" href="#">Добавить в корзину</a>
+                </div>
+              </div>
+
+              <div class="stock-item">
+                <div class="stock-item__descr">
+                  <div class="stock-item__img-box">
+                    <img class="stock-item__img" src="images/stock/6.png" alt="item image">
+                  </div>
+                  <div class="stock-item__name">Малина-ежевика</div>
+                  <div class="stock-item__size-box">
+                    <div class="stock-item__size">0,5 л</div>
+                    <div class="stock-item__size">1 л</div>
+                  </div>
+                  <div class="stock-item__num-box">
+                    <input class="stock-item__number" type="number" value="1"></input>
+                    <div class="stock-item__price">120 грн</div>
+                  </div>
+                </div>
+                <div class="stock-item__add-box">
+                  <a class="stock-item__add" href="#">Добавить в корзину</a>
+                </div>
+              </div>
+
+            </div>
+            <div class="stock-items">
+
+              <div class="stock-item">
+                <div class="stock-item__descr">
+                  <div class="stock-item__img-box">
+                    <img class="stock-item__img" src="images/stock/1.png" alt="item image">
+                  </div>
+                  <div class="stock-item__name">Яблоко - лайм</div>
+                  <div class="stock-item__size-box">
+                    <div class="stock-item__size">0,5 л</div>
+                    <div class="stock-item__size">1 л</div>
+                  </div>
+                  <div class="stock-item__num-box">
+                    <input class="stock-item__number" type="number" value="1"></input>
+                    <div class="stock-item__price">100 грн</div>
+                  </div>
+                </div>
+                <div class="stock-item__add-box">
+                  <a class="stock-item__add" href="#">Добавить в корзину</a>
+                </div>
+              </div>
+
+              <div class="stock-item">
+                <div class="stock-item__descr">
+                  <div class="stock-item__img-box">
+                    <img class="stock-item__img" src="images/stock/2.png" alt="item image">
+                  </div>
+                  <div class="stock-item__name">Апельсин-манго</div>
+                  <div class="stock-item__size-box">
+                    <div class="stock-item__size">0,5 л</div>
+                    <div class="stock-item__size">1 л</div>
+                  </div>
+                  <div class="stock-item__num-box">
+                    <input class="stock-item__number" type="number" value="1"></input>
+                    <div class="stock-item__price">120 грн</div>
+                  </div>
+                </div>
+                <div class="stock-item__add-box">
+                  <a class="stock-item__add" href="#">Добавить в корзину</a>
+                </div>
+              </div>
+
+              <div class="stock-item">
+                <div class="stock-item__descr">
+                  <div class="stock-item__img-box">
+                    <img class="stock-item__img" src="images/stock/3.png" alt="item image">
+                  </div>
+                  <div class="stock-item__name">Лимон</div>
+                  <div class="stock-item__size-box">
+                    <div class="stock-item__size">0,5 л</div>
+                    <div class="stock-item__size">1 л</div>
+                  </div>
+                  <div class="stock-item__num-box">
+                    <input class="stock-item__number" type="number" value="1"></input>
+                    <div class="stock-item__price">100 грн</div>
+                  </div>
+                </div>
+                <div class="stock-item__add-box">
+                  <a class="stock-item__add" href="#">Добавить в корзину</a>
+                </div>
+              </div>
+
+              <div class="stock-item">
+                <div class="stock-item__descr">
+                  <div class="stock-item__img-box">
+                    <img class="stock-item__img" src="images/stock/4.png" alt="item image">
+                  </div>
+                  <div class="stock-item__name">Вишня</div>
+                  <div class="stock-item__size-box">
+                    <div class="stock-item__size">0,5 л</div>
+                    <div class="stock-item__size">1 л</div>
+                  </div>
+                  <div class="stock-item__num-box">
+                    <input class="stock-item__number" type="number" value="1"></input>
+                    <div class="stock-item__price">140 грн</div>
+                  </div>
+                </div>
+                <div class="stock-item__add-box">
+                  <a class="stock-item__add" href="#">Добавить в корзину</a>
+                </div>
+              </div>
+
+              <div class="stock-item">
+                <div class="stock-item__descr">
+                  <div class="stock-item__img-box">
+                    <img class="stock-item__img" src="images/stock/5.png" alt="item image">
+                  </div>
+                  <div class="stock-item__name">Клубника</div>
+                  <div class="stock-item__size-box">
+                    <div class="stock-item__size">0,5 л</div>
+                    <div class="stock-item__size">1 л</div>
+                  </div>
+                  <div class="stock-item__num-box">
+                    <input class="stock-item__number" type="number" value="1"></input>
+                    <div class="stock-item__price">100 грн</div>
+                  </div>
+                </div>
+                <div class="stock-item__add-box">
+                  <a class="stock-item__add" href="#">Добавить в корзину</a>
+                </div>
+              </div>
+
+              <div class="stock-item">
+                <div class="stock-item__descr">
+                  <div class="stock-item__img-box">
+                    <img class="stock-item__img" src="images/stock/6.png" alt="item image">
+                  </div>
+                  <div class="stock-item__name">Малина-ежевика</div>
+                  <div class="stock-item__size-box">
+                    <div class="stock-item__size">0,5 л</div>
+                    <div class="stock-item__size">1 л</div>
+                  </div>
+                  <div class="stock-item__num-box">
+                    <input class="stock-item__number" type="number" value="1"></input>
+                    <div class="stock-item__price">120 грн</div>
+                  </div>
+                </div>
+                <div class="stock-item__add-box">
+                  <a class="stock-item__add" href="#">Добавить в корзину</a>
+                </div>
+              </div>
+
+            </div>
+            <div class="stock-items">
+
+              <div class="stock-item">
+                <div class="stock-item__descr">
+                  <div class="stock-item__img-box">
+                    <img class="stock-item__img" src="images/stock/1.png" alt="item image">
+                  </div>
+                  <div class="stock-item__name">Яблоко - лайм</div>
+                  <div class="stock-item__size-box">
+                    <div class="stock-item__size">0,5 л</div>
+                    <div class="stock-item__size">1 л</div>
+                  </div>
+                  <div class="stock-item__num-box">
+                    <input class="stock-item__number" type="number" value="1"></input>
+                    <div class="stock-item__price">100 грн</div>
+                  </div>
+                </div>
+                <div class="stock-item__add-box">
+                  <a class="stock-item__add" href="#">Добавить в корзину</a>
+                </div>
+              </div>
+
+              <div class="stock-item">
+                <div class="stock-item__descr">
+                  <div class="stock-item__img-box">
+                    <img class="stock-item__img" src="images/stock/2.png" alt="item image">
+                  </div>
+                  <div class="stock-item__name">Апельсин-манго</div>
+                  <div class="stock-item__size-box">
+                    <div class="stock-item__size">0,5 л</div>
+                    <div class="stock-item__size">1 л</div>
+                  </div>
+                  <div class="stock-item__num-box">
+                    <input class="stock-item__number" type="number" value="1"></input>
+                    <div class="stock-item__price">120 грн</div>
+                  </div>
+                </div>
+                <div class="stock-item__add-box">
+                  <a class="stock-item__add" href="#">Добавить в корзину</a>
+                </div>
+              </div>
+
+              <div class="stock-item">
+                <div class="stock-item__descr">
+                  <div class="stock-item__img-box">
+                    <img class="stock-item__img" src="images/stock/3.png" alt="item image">
+                  </div>
+                  <div class="stock-item__name">Лимон</div>
+                  <div class="stock-item__size-box">
+                    <div class="stock-item__size">0,5 л</div>
+                    <div class="stock-item__size">1 л</div>
+                  </div>
+                  <div class="stock-item__num-box">
+                    <input class="stock-item__number" type="number" value="1"></input>
+                    <div class="stock-item__price">100 грн</div>
+                  </div>
+                </div>
+                <div class="stock-item__add-box">
+                  <a class="stock-item__add" href="#">Добавить в корзину</a>
+                </div>
+              </div>
+
+              <div class="stock-item">
+                <div class="stock-item__descr">
+                  <div class="stock-item__img-box">
+                    <img class="stock-item__img" src="images/stock/4.png" alt="item image">
+                  </div>
+                  <div class="stock-item__name">Вишня</div>
+                  <div class="stock-item__size-box">
+                    <div class="stock-item__size">0,5 л</div>
+                    <div class="stock-item__size">1 л</div>
+                  </div>
+                  <div class="stock-item__num-box">
+                    <input class="stock-item__number" type="number" value="1"></input>
+                    <div class="stock-item__price">140 грн</div>
+                  </div>
+                </div>
+                <div class="stock-item__add-box">
+                  <a class="stock-item__add" href="#">Добавить в корзину</a>
+                </div>
+              </div>
+
+              <div class="stock-item">
+                <div class="stock-item__descr">
+                  <div class="stock-item__img-box">
+                    <img class="stock-item__img" src="images/stock/5.png" alt="item image">
+                  </div>
+                  <div class="stock-item__name">Клубника</div>
+                  <div class="stock-item__size-box">
+                    <div class="stock-item__size">0,5 л</div>
+                    <div class="stock-item__size">1 л</div>
+                  </div>
+                  <div class="stock-item__num-box">
+                    <input class="stock-item__number" type="number" value="1"></input>
+                    <div class="stock-item__price">100 грн</div>
+                  </div>
+                </div>
+                <div class="stock-item__add-box">
+                  <a class="stock-item__add" href="#">Добавить в корзину</a>
+                </div>
+              </div>
+
+              <div class="stock-item">
+                <div class="stock-item__descr">
+                  <div class="stock-item__img-box">
+                    <img class="stock-item__img" src="images/stock/6.png" alt="item image">
+                  </div>
+                  <div class="stock-item__name">Малина-ежевика</div>
+                  <div class="stock-item__size-box">
+                    <div class="stock-item__size">0,5 л</div>
+                    <div class="stock-item__size">1 л</div>
+                  </div>
+                  <div class="stock-item__num-box">
+                    <input id="1" class="stock-item__number" type="number" value="1"></input>
+                    <div class="stock-item__price">120 грн</div>
+                  </div>
+                </div>
+                <div class="stock-item__add-box">
+                  <a class="stock-item__add" href="#">Добавить в корзину</a>
+                </div>
+              </div>
+
+            </div>
+            <div class="stock-items">
+
+              <div class="stock-item">
+                <div class="stock-item__descr">
+                  <div class="stock-item__img-box">
+                    <img class="stock-item__img" src="images/stock/1.png" alt="item image">
+                  </div>
+                  <div class="stock-item__name">Яблоко - лайм</div>
+                  <div class="stock-item__size-box">
+                    <div class="stock-item__size">0,5 л</div>
+                    <div class="stock-item__size">1 л</div>
+                  </div>
+                  <div class="stock-item__num-box">
+                    <input class="stock-item__number" type="number" value="1"></input>
+                    <div class="stock-item__price">100 грн</div>
+                  </div>
+                </div>
+                <div class="stock-item__add-box">
+                  <a class="stock-item__add" href="#">Добавить в корзину</a>
+                </div>
+              </div>
+
+              <div class="stock-item">
+                <div class="stock-item__descr">
+                  <div class="stock-item__img-box">
+                    <img class="stock-item__img" src="images/stock/2.png" alt="item image">
+                  </div>
+                  <div class="stock-item__name">Апельсин-манго</div>
+                  <div class="stock-item__size-box">
+                    <div class="stock-item__size">0,5 л</div>
+                    <div class="stock-item__size">1 л</div>
+                  </div>
+                  <div class="stock-item__num-box">
+                    <input class="stock-item__number" type="number" value="1"></input>
+                    <div class="stock-item__price">120 грн</div>
+                  </div>
+                </div>
+                <div class="stock-item__add-box">
+                  <a class="stock-item__add" href="#">Добавить в корзину</a>
+                </div>
+              </div>
+
+              <div class="stock-item">
+                <div class="stock-item__descr">
+                  <div class="stock-item__img-box">
+                    <img class="stock-item__img" src="images/stock/3.png" alt="item image">
+                  </div>
+                  <div class="stock-item__name">Лимон</div>
+                  <div class="stock-item__size-box">
+                    <div class="stock-item__size">0,5 л</div>
+                    <div class="stock-item__size">1 л</div>
+                  </div>
+                  <div class="stock-item__num-box">
+                    <input class="stock-item__number" type="number" value="1"></input>
+                    <div class="stock-item__price">100 грн</div>
+                  </div>
+                </div>
+                <div class="stock-item__add-box">
+                  <a class="stock-item__add" href="#">Добавить в корзину</a>
+                </div>
+              </div>
+
+              <div class="stock-item">
+                <div class="stock-item__descr">
+                  <div class="stock-item__img-box">
+                    <img class="stock-item__img" src="images/stock/4.png" alt="item image">
+                  </div>
+                  <div class="stock-item__name">Вишня</div>
+                  <div class="stock-item__size-box">
+                    <div class="stock-item__size">0,5 л</div>
+                    <div class="stock-item__size">1 л</div>
+                  </div>
+                  <div class="stock-item__num-box">
+                    <input class="stock-item__number" type="number" value="1"></input>
+                    <div class="stock-item__price">140 грн</div>
+                  </div>
+                </div>
+                <div class="stock-item__add-box">
+                  <a class="stock-item__add" href="#">Добавить в корзину</a>
+                </div>
+              </div>
+
+              <div class="stock-item">
+                <div class="stock-item__descr">
+                  <div class="stock-item__img-box">
+                    <img class="stock-item__img" src="images/stock/5.png" alt="item image">
+                  </div>
+                  <div class="stock-item__name">Клубника</div>
+                  <div class="stock-item__size-box">
+                    <div class="stock-item__size">0,5 л</div>
+                    <div class="stock-item__size">1 л</div>
+                  </div>
+                  <div class="stock-item__num-box">
+                    <input class="stock-item__number" type="number" value="1"></input>
+                    <div class="stock-item__price">100 грн</div>
+                  </div>
+                </div>
+                <div class="stock-item__add-box">
+                  <a class="stock-item__add" href="#">Добавить в корзину</a>
+                </div>
+              </div>
+
+              <div class="stock-item">
+                <div class="stock-item__descr">
+                  <div class="stock-item__img-box">
+                    <img class="stock-item__img" src="images/stock/6.png" alt="item image">
+                  </div>
+                  <div class="stock-item__name">Малина-ежевика</div>
+                  <div class="stock-item__size-box">
+                    <div class="stock-item__size">0,5 л</div>
+                    <div class="stock-item__size">1 л</div>
+                  </div>
+                  <div class="stock-item__num-box">
+                    <input id="1" class="stock-item__number" type="number" value="1"></input>
+                    <div class="stock-item__price">120 грн</div>
+                  </div>
+                </div>
+                <div class="stock-item__add-box">
+                  <a class="stock-item__add" href="#">Добавить в корзину</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+
+          <!-- ------------------------------------------------------------------------------------------------------------ -->
+
+
+
+
+          <div class="stock-slider__2">
+            <div class="stock-items">
+
+              <div class="stock-item">
+                <div class="stock-item__descr">
+                  <div class="stock-item__img-box">
+                    <img class="stock-item__img" src="images/stock/1.png" alt="item image">
+                  </div>
+                  <div class="stock-item__name">Яблоко - лайм</div>
+                  <div class="stock-item__size-box">
+                    <div class="stock-item__size">0,5 л</div>
+                    <div class="stock-item__size">1 л</div>
+                  </div>
+                  <div class="stock-item__num-box">
+                    <input class="stock-item__number" type="number" value="1"></input>
+                    <div class="stock-item__price">100 грн</div>
+                  </div>
+                </div>
+                <div class="stock-item__add-box">
+                  <a class="stock-item__add" href="#">Добавить в корзину</a>
+                </div>
+              </div>
+
+              <div class="stock-item">
+                <div class="stock-item__descr">
+                  <div class="stock-item__img-box">
+                    <img class="stock-item__img" src="images/stock/2.png" alt="item image">
+                  </div>
+                  <div class="stock-item__name">Апельсин-манго</div>
+                  <div class="stock-item__size-box">
+                    <div class="stock-item__size">0,5 л</div>
+                    <div class="stock-item__size">1 л</div>
+                  </div>
+                  <div class="stock-item__num-box">
+                    <input class="stock-item__number" type="number" value="1"></input>
+                    <div class="stock-item__price">120 грн</div>
+                  </div>
+                </div>
+                <div class="stock-item__add-box">
+                  <a class="stock-item__add" href="#">Добавить в корзину</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="stock-items">
+              <div class="stock-item">
+                <div class="stock-item__descr">
+                  <div class="stock-item__img-box">
+                    <img class="stock-item__img" src="images/stock/3.png" alt="item image">
+                  </div>
+                  <div class="stock-item__name">Лимон</div>
+                  <div class="stock-item__size-box">
+                    <div class="stock-item__size">0,5 л</div>
+                    <div class="stock-item__size">1 л</div>
+                  </div>
+                  <div class="stock-item__num-box">
+                    <input class="stock-item__number" type="number" value="1"></input>
+                    <div class="stock-item__price">100 грн</div>
+                  </div>
+                </div>
+                <div class="stock-item__add-box">
+                  <a class="stock-item__add" href="#">Добавить в корзину</a>
+                </div>
+              </div>
+
+              <div class="stock-item">
+                <div class="stock-item__descr">
+                  <div class="stock-item__img-box">
+                    <img class="stock-item__img" src="images/stock/4.png" alt="item image">
+                  </div>
+                  <div class="stock-item__name">Вишня</div>
+                  <div class="stock-item__size-box">
+                    <div class="stock-item__size">0,5 л</div>
+                    <div class="stock-item__size">1 л</div>
+                  </div>
+                  <div class="stock-item__num-box">
+                    <input class="stock-item__number" type="number" value="1"></input>
+                    <div class="stock-item__price">140 грн</div>
+                  </div>
+                </div>
+                <div class="stock-item__add-box">
+                  <a class="stock-item__add" href="#">Добавить в корзину</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="stock-items">
+              <div class="stock-item">
+                <div class="stock-item__descr">
+                  <div class="stock-item__img-box">
+                    <img class="stock-item__img" src="images/stock/5.png" alt="item image">
+                  </div>
+                  <div class="stock-item__name">Клубника</div>
+                  <div class="stock-item__size-box">
+                    <div class="stock-item__size">0,5 л</div>
+                    <div class="stock-item__size">1 л</div>
+                  </div>
+                  <div class="stock-item__num-box">
+                    <input class="stock-item__number" type="number" value="1"></input>
+                    <div class="stock-item__price">100 грн</div>
+                  </div>
+                </div>
+                <div class="stock-item__add-box">
+                  <a class="stock-item__add" href="#">Добавить в корзину</a>
+                </div>
+              </div>
+
+              <div class="stock-item">
+                <div class="stock-item__descr">
+                  <div class="stock-item__img-box">
+                    <img class="stock-item__img" src="images/stock/6.png" alt="item image">
+                  </div>
+                  <div class="stock-item__name">Малина-ежевика</div>
+                  <div class="stock-item__size-box">
+                    <div class="stock-item__size">0,5 л</div>
+                    <div class="stock-item__size">1 л</div>
+                  </div>
+                  <div class="stock-item__num-box">
+                    <input class="stock-item__number" type="number" value="1"></input>
+                    <div class="stock-item__price">120 грн</div>
+                  </div>
+                </div>
+                <div class="stock-item__add-box">
+                  <a class="stock-item__add" href="#">Добавить в корзину</a>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="stock-items">
+
+              <div class="stock-item">
+                <div class="stock-item__descr">
+                  <div class="stock-item__img-box">
+                    <img class="stock-item__img" src="images/stock/1.png" alt="item image">
+                  </div>
+                  <div class="stock-item__name">Яблоко - лайм</div>
+                  <div class="stock-item__size-box">
+                    <div class="stock-item__size">0,5 л</div>
+                    <div class="stock-item__size">1 л</div>
+                  </div>
+                  <div class="stock-item__num-box">
+                    <input class="stock-item__number" type="number" value="1"></input>
+                    <div class="stock-item__price">100 грн</div>
+                  </div>
+                </div>
+                <div class="stock-item__add-box">
+                  <a class="stock-item__add" href="#">Добавить в корзину</a>
+                </div>
+              </div>
+
+              <div class="stock-item">
+                <div class="stock-item__descr">
+                  <div class="stock-item__img-box">
+                    <img class="stock-item__img" src="images/stock/2.png" alt="item image">
+                  </div>
+                  <div class="stock-item__name">Апельсин-манго</div>
+                  <div class="stock-item__size-box">
+                    <div class="stock-item__size">0,5 л</div>
+                    <div class="stock-item__size">1 л</div>
+                  </div>
+                  <div class="stock-item__num-box">
+                    <input class="stock-item__number" type="number" value="1"></input>
+                    <div class="stock-item__price">120 грн</div>
+                  </div>
+                </div>
+                <div class="stock-item__add-box">
+                  <a class="stock-item__add" href="#">Добавить в корзину</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="stock-items">
+              <div class="stock-item">
+                <div class="stock-item__descr">
+                  <div class="stock-item__img-box">
+                    <img class="stock-item__img" src="images/stock/3.png" alt="item image">
+                  </div>
+                  <div class="stock-item__name">Лимон</div>
+                  <div class="stock-item__size-box">
+                    <div class="stock-item__size">0,5 л</div>
+                    <div class="stock-item__size">1 л</div>
+                  </div>
+                  <div class="stock-item__num-box">
+                    <input class="stock-item__number" type="number" value="1"></input>
+                    <div class="stock-item__price">100 грн</div>
+                  </div>
+                </div>
+                <div class="stock-item__add-box">
+                  <a class="stock-item__add" href="#">Добавить в корзину</a>
+                </div>
+              </div>
+
+              <div class="stock-item">
+                <div class="stock-item__descr">
+                  <div class="stock-item__img-box">
+                    <img class="stock-item__img" src="images/stock/4.png" alt="item image">
+                  </div>
+                  <div class="stock-item__name">Вишня</div>
+                  <div class="stock-item__size-box">
+                    <div class="stock-item__size">0,5 л</div>
+                    <div class="stock-item__size">1 л</div>
+                  </div>
+                  <div class="stock-item__num-box">
+                    <input class="stock-item__number" type="number" value="1"></input>
+                    <div class="stock-item__price">140 грн</div>
+                  </div>
+                </div>
+                <div class="stock-item__add-box">
+                  <a class="stock-item__add" href="#">Добавить в корзину</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="stock-items">
+              <div class="stock-item">
+                <div class="stock-item__descr">
+                  <div class="stock-item__img-box">
+                    <img class="stock-item__img" src="images/stock/5.png" alt="item image">
+                  </div>
+                  <div class="stock-item__name">Клубника</div>
+                  <div class="stock-item__size-box">
+                    <div class="stock-item__size">0,5 л</div>
+                    <div class="stock-item__size">1 л</div>
+                  </div>
+                  <div class="stock-item__num-box">
+                    <input class="stock-item__number" type="number" value="1"></input>
+                    <div class="stock-item__price">100 грн</div>
+                  </div>
+                </div>
+                <div class="stock-item__add-box">
+                  <a class="stock-item__add" href="#">Добавить в корзину</a>
+                </div>
+              </div>
+
+              <div class="stock-item">
+                <div class="stock-item__descr">
+                  <div class="stock-item__img-box">
+                    <img class="stock-item__img" src="images/stock/6.png" alt="item image">
+                  </div>
+                  <div class="stock-item__name">Малина-ежевика</div>
+                  <div class="stock-item__size-box">
+                    <div class="stock-item__size">0,5 л</div>
+                    <div class="stock-item__size">1 л</div>
+                  </div>
+                  <div class="stock-item__num-box">
+                    <input class="stock-item__number" type="number" value="1"></input>
+                    <div class="stock-item__price">120 грн</div>
+                  </div>
+                </div>
+                <div class="stock-item__add-box">
+                  <a class="stock-item__add" href="#">Добавить в корзину</a>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="stock-items">
+
+              <div class="stock-item">
+                <div class="stock-item__descr">
+                  <div class="stock-item__img-box">
+                    <img class="stock-item__img" src="images/stock/1.png" alt="item image">
+                  </div>
+                  <div class="stock-item__name">Яблоко - лайм</div>
+                  <div class="stock-item__size-box">
+                    <div class="stock-item__size">0,5 л</div>
+                    <div class="stock-item__size">1 л</div>
+                  </div>
+                  <div class="stock-item__num-box">
+                    <input class="stock-item__number" type="number" value="1"></input>
+                    <div class="stock-item__price">100 грн</div>
+                  </div>
+                </div>
+                <div class="stock-item__add-box">
+                  <a class="stock-item__add" href="#">Добавить в корзину</a>
+                </div>
+              </div>
+
+              <div class="stock-item">
+                <div class="stock-item__descr">
+                  <div class="stock-item__img-box">
+                    <img class="stock-item__img" src="images/stock/2.png" alt="item image">
+                  </div>
+                  <div class="stock-item__name">Апельсин-манго</div>
+                  <div class="stock-item__size-box">
+                    <div class="stock-item__size">0,5 л</div>
+                    <div class="stock-item__size">1 л</div>
+                  </div>
+                  <div class="stock-item__num-box">
+                    <input class="stock-item__number" type="number" value="1"></input>
+                    <div class="stock-item__price">120 грн</div>
+                  </div>
+                </div>
+                <div class="stock-item__add-box">
+                  <a class="stock-item__add" href="#">Добавить в корзину</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="stock-items">
+              <div class="stock-item">
+                <div class="stock-item__descr">
+                  <div class="stock-item__img-box">
+                    <img class="stock-item__img" src="images/stock/3.png" alt="item image">
+                  </div>
+                  <div class="stock-item__name">Лимон</div>
+                  <div class="stock-item__size-box">
+                    <div class="stock-item__size">0,5 л</div>
+                    <div class="stock-item__size">1 л</div>
+                  </div>
+                  <div class="stock-item__num-box">
+                    <input class="stock-item__number" type="number" value="1"></input>
+                    <div class="stock-item__price">100 грн</div>
+                  </div>
+                </div>
+                <div class="stock-item__add-box">
+                  <a class="stock-item__add" href="#">Добавить в корзину</a>
+                </div>
+              </div>
+
+              <div class="stock-item">
+                <div class="stock-item__descr">
+                  <div class="stock-item__img-box">
+                    <img class="stock-item__img" src="images/stock/4.png" alt="item image">
+                  </div>
+                  <div class="stock-item__name">Вишня</div>
+                  <div class="stock-item__size-box">
+                    <div class="stock-item__size">0,5 л</div>
+                    <div class="stock-item__size">1 л</div>
+                  </div>
+                  <div class="stock-item__num-box">
+                    <input class="stock-item__number" type="number" value="1"></input>
+                    <div class="stock-item__price">140 грн</div>
+                  </div>
+                </div>
+                <div class="stock-item__add-box">
+                  <a class="stock-item__add" href="#">Добавить в корзину</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="stock-items">
+              <div class="stock-item">
+                <div class="stock-item__descr">
+                  <div class="stock-item__img-box">
+                    <img class="stock-item__img" src="images/stock/5.png" alt="item image">
+                  </div>
+                  <div class="stock-item__name">Клубника</div>
+                  <div class="stock-item__size-box">
+                    <div class="stock-item__size">0,5 л</div>
+                    <div class="stock-item__size">1 л</div>
+                  </div>
+                  <div class="stock-item__num-box">
+                    <input class="stock-item__number" type="number" value="1"></input>
+                    <div class="stock-item__price">100 грн</div>
+                  </div>
+                </div>
+                <div class="stock-item__add-box">
+                  <a class="stock-item__add" href="#">Добавить в корзину</a>
+                </div>
+              </div>
+
+              <div class="stock-item">
+                <div class="stock-item__descr">
+                  <div class="stock-item__img-box">
+                    <img class="stock-item__img" src="images/stock/6.png" alt="item image">
+                  </div>
+                  <div class="stock-item__name">Малина-ежевика</div>
+                  <div class="stock-item__size-box">
+                    <div class="stock-item__size">0,5 л</div>
+                    <div class="stock-item__size">1 л</div>
+                  </div>
+                  <div class="stock-item__num-box">
+                    <input id="1" class="stock-item__number" type="number" value="1"></input>
+                    <div class="stock-item__price">120 грн</div>
+                  </div>
+                </div>
+                <div class="stock-item__add-box">
+                  <a class="stock-item__add" href="#">Добавить в корзину</a>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="stock-items">
+
+              <div class="stock-item">
+                <div class="stock-item__descr">
+                  <div class="stock-item__img-box">
+                    <img class="stock-item__img" src="images/stock/1.png" alt="item image">
+                  </div>
+                  <div class="stock-item__name">Яблоко - лайм</div>
+                  <div class="stock-item__size-box">
+                    <div class="stock-item__size">0,5 л</div>
+                    <div class="stock-item__size">1 л</div>
+                  </div>
+                  <div class="stock-item__num-box">
+                    <input class="stock-item__number" type="number" value="1"></input>
+                    <div class="stock-item__price">100 грн</div>
+                  </div>
+                </div>
+                <div class="stock-item__add-box">
+                  <a class="stock-item__add" href="#">Добавить в корзину</a>
+                </div>
+              </div>
+
+              <div class="stock-item">
+                <div class="stock-item__descr">
+                  <div class="stock-item__img-box">
+                    <img class="stock-item__img" src="images/stock/2.png" alt="item image">
+                  </div>
+                  <div class="stock-item__name">Апельсин-манго</div>
+                  <div class="stock-item__size-box">
+                    <div class="stock-item__size">0,5 л</div>
+                    <div class="stock-item__size">1 л</div>
+                  </div>
+                  <div class="stock-item__num-box">
+                    <input class="stock-item__number" type="number" value="1"></input>
+                    <div class="stock-item__price">120 грн</div>
+                  </div>
+                </div>
+                <div class="stock-item__add-box">
+                  <a class="stock-item__add" href="#">Добавить в корзину</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="stock-items">
+              <div class="stock-item">
+                <div class="stock-item__descr">
+                  <div class="stock-item__img-box">
+                    <img class="stock-item__img" src="images/stock/3.png" alt="item image">
+                  </div>
+                  <div class="stock-item__name">Лимон</div>
+                  <div class="stock-item__size-box">
+                    <div class="stock-item__size">0,5 л</div>
+                    <div class="stock-item__size">1 л</div>
+                  </div>
+                  <div class="stock-item__num-box">
+                    <input class="stock-item__number" type="number" value="1"></input>
+                    <div class="stock-item__price">100 грн</div>
+                  </div>
+                </div>
+                <div class="stock-item__add-box">
+                  <a class="stock-item__add" href="#">Добавить в корзину</a>
+                </div>
+              </div>
+
+              <div class="stock-item">
+                <div class="stock-item__descr">
+                  <div class="stock-item__img-box">
+                    <img class="stock-item__img" src="images/stock/4.png" alt="item image">
+                  </div>
+                  <div class="stock-item__name">Вишня</div>
+                  <div class="stock-item__size-box">
+                    <div class="stock-item__size">0,5 л</div>
+                    <div class="stock-item__size">1 л</div>
+                  </div>
+                  <div class="stock-item__num-box">
+                    <input class="stock-item__number" type="number" value="1"></input>
+                    <div class="stock-item__price">140 грн</div>
+                  </div>
+                </div>
+                <div class="stock-item__add-box">
+                  <a class="stock-item__add" href="#">Добавить в корзину</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="stock-items">
+              <div class="stock-item">
+                <div class="stock-item__descr">
+                  <div class="stock-item__img-box">
+                    <img class="stock-item__img" src="images/stock/5.png" alt="item image">
+                  </div>
+                  <div class="stock-item__name">Клубника</div>
+                  <div class="stock-item__size-box">
+                    <div class="stock-item__size">0,5 л</div>
+                    <div class="stock-item__size">1 л</div>
+                  </div>
+                  <div class="stock-item__num-box">
+                    <input class="stock-item__number" type="number" value="1"></input>
+                    <div class="stock-item__price">100 грн</div>
+                  </div>
+                </div>
+                <div class="stock-item__add-box">
+                  <a class="stock-item__add" href="#">Добавить в корзину</a>
+                </div>
+              </div>
+
+              <div class="stock-item">
+                <div class="stock-item__descr">
+                  <div class="stock-item__img-box">
+                    <img class="stock-item__img" src="images/stock/6.png" alt="item image">
+                  </div>
+                  <div class="stock-item__name">Малина-ежевика</div>
+                  <div class="stock-item__size-box">
+                    <div class="stock-item__size">0,5 л</div>
+                    <div class="stock-item__size">1 л</div>
+                  </div>
+                  <div class="stock-item__num-box">
+                    <input id="1" class="stock-item__number" type="number" value="1"></input>
+                    <div class="stock-item__price">120 грн</div>
+                  </div>
+                </div>
+                <div class="stock-item__add-box">
+                  <a class="stock-item__add" href="#">Добавить в корзину</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <!-- ------------------------------------------------------------------------------------------------------------- -->
+
+
+
+          <div class="stock-slider__3">
+
+
+            <div class="stock-item">
+              <div class="stock-item__descr">
+                <div class="stock-item__img-box">
+                  <img class="stock-item__img" src="images/stock/1.png" alt="item image">
+                </div>
+                <div class="stock-item__name">Яблоко - лайм</div>
+                <div class="stock-item__size-box">
+                  <div class="stock-item__size">0,5 л</div>
+                  <div class="stock-item__size">1 л</div>
+                </div>
+                <div class="stock-item__num-box">
+                  <input class="stock-item__number" type="number" value="1"></input>
+                  <div class="stock-item__price">100 грн</div>
+                </div>
+              </div>
+              <div class="stock-item__add-box">
+                <a class="stock-item__add" href="#">Добавить в корзину</a>
+              </div>
+            </div>
+
+            <div class="stock-item">
+              <div class="stock-item__descr">
+                <div class="stock-item__img-box">
+                  <img class="stock-item__img" src="images/stock/2.png" alt="item image">
+                </div>
+                <div class="stock-item__name">Апельсин-манго</div>
+                <div class="stock-item__size-box">
+                  <div class="stock-item__size">0,5 л</div>
+                  <div class="stock-item__size">1 л</div>
+                </div>
+                <div class="stock-item__num-box">
+                  <input class="stock-item__number" type="number" value="1"></input>
+                  <div class="stock-item__price">120 грн</div>
+                </div>
+              </div>
+              <div class="stock-item__add-box">
+                <a class="stock-item__add" href="#">Добавить в корзину</a>
+              </div>
+            </div>
+
+
+
+            <div class="stock-item">
+              <div class="stock-item__descr">
+                <div class="stock-item__img-box">
+                  <img class="stock-item__img" src="images/stock/3.png" alt="item image">
+                </div>
+                <div class="stock-item__name">Лимон</div>
+                <div class="stock-item__size-box">
+                  <div class="stock-item__size">0,5 л</div>
+                  <div class="stock-item__size">1 л</div>
+                </div>
+                <div class="stock-item__num-box">
+                  <input class="stock-item__number" type="number" value="1"></input>
+                  <div class="stock-item__price">100 грн</div>
+                </div>
+              </div>
+              <div class="stock-item__add-box">
+                <a class="stock-item__add" href="#">Добавить в корзину</a>
+              </div>
+            </div>
+
+            <div class="stock-item">
+              <div class="stock-item__descr">
+                <div class="stock-item__img-box">
+                  <img class="stock-item__img" src="images/stock/4.png" alt="item image">
+                </div>
+                <div class="stock-item__name">Вишня</div>
+                <div class="stock-item__size-box">
+                  <div class="stock-item__size">0,5 л</div>
+                  <div class="stock-item__size">1 л</div>
+                </div>
+                <div class="stock-item__num-box">
+                  <input class="stock-item__number" type="number" value="1"></input>
+                  <div class="stock-item__price">140 грн</div>
+                </div>
+              </div>
+              <div class="stock-item__add-box">
+                <a class="stock-item__add" href="#">Добавить в корзину</a>
+              </div>
+            </div>
+
+
+
+            <div class="stock-item">
+              <div class="stock-item__descr">
+                <div class="stock-item__img-box">
+                  <img class="stock-item__img" src="images/stock/5.png" alt="item image">
+                </div>
+                <div class="stock-item__name">Клубника</div>
+                <div class="stock-item__size-box">
+                  <div class="stock-item__size">0,5 л</div>
+                  <div class="stock-item__size">1 л</div>
+                </div>
+                <div class="stock-item__num-box">
+                  <input class="stock-item__number" type="number" value="1"></input>
+                  <div class="stock-item__price">100 грн</div>
+                </div>
+              </div>
+              <div class="stock-item__add-box">
+                <a class="stock-item__add" href="#">Добавить в корзину</a>
+              </div>
+            </div>
+
+            <div class="stock-item">
+              <div class="stock-item__descr">
+                <div class="stock-item__img-box">
+                  <img class="stock-item__img" src="images/stock/6.png" alt="item image">
+                </div>
+                <div class="stock-item__name">Малина-ежевика</div>
+                <div class="stock-item__size-box">
+                  <div class="stock-item__size">0,5 л</div>
+                  <div class="stock-item__size">1 л</div>
+                </div>
+                <div class="stock-item__num-box">
+                  <input class="stock-item__number" type="number" value="1"></input>
+                  <div class="stock-item__price">120 грн</div>
+                </div>
+              </div>
+              <div class="stock-item__add-box">
+                <a class="stock-item__add" href="#">Добавить в корзину</a>
+              </div>
+            </div>
+
+
+
+
+
+            <div class="stock-item">
+              <div class="stock-item__descr">
+                <div class="stock-item__img-box">
+                  <img class="stock-item__img" src="images/stock/1.png" alt="item image">
+                </div>
+                <div class="stock-item__name">Яблоко - лайм</div>
+                <div class="stock-item__size-box">
+                  <div class="stock-item__size">0,5 л</div>
+                  <div class="stock-item__size">1 л</div>
+                </div>
+                <div class="stock-item__num-box">
+                  <input class="stock-item__number" type="number" value="1"></input>
+                  <div class="stock-item__price">100 грн</div>
+                </div>
+              </div>
+              <div class="stock-item__add-box">
+                <a class="stock-item__add" href="#">Добавить в корзину</a>
+              </div>
+            </div>
+
+            <div class="stock-item">
+              <div class="stock-item__descr">
+                <div class="stock-item__img-box">
+                  <img class="stock-item__img" src="images/stock/2.png" alt="item image">
+                </div>
+                <div class="stock-item__name">Апельсин-манго</div>
+                <div class="stock-item__size-box">
+                  <div class="stock-item__size">0,5 л</div>
+                  <div class="stock-item__size">1 л</div>
+                </div>
+                <div class="stock-item__num-box">
+                  <input class="stock-item__number" type="number" value="1"></input>
+                  <div class="stock-item__price">120 грн</div>
+                </div>
+              </div>
+              <div class="stock-item__add-box">
+                <a class="stock-item__add" href="#">Добавить в корзину</a>
+              </div>
+            </div>
+
+
+
+            <div class="stock-item">
+              <div class="stock-item__descr">
+                <div class="stock-item__img-box">
+                  <img class="stock-item__img" src="images/stock/3.png" alt="item image">
+                </div>
+                <div class="stock-item__name">Лимон</div>
+                <div class="stock-item__size-box">
+                  <div class="stock-item__size">0,5 л</div>
+                  <div class="stock-item__size">1 л</div>
+                </div>
+                <div class="stock-item__num-box">
+                  <input class="stock-item__number" type="number" value="1"></input>
+                  <div class="stock-item__price">100 грн</div>
+                </div>
+              </div>
+              <div class="stock-item__add-box">
+                <a class="stock-item__add" href="#">Добавить в корзину</a>
+              </div>
+            </div>
+
+            <div class="stock-item">
+              <div class="stock-item__descr">
+                <div class="stock-item__img-box">
+                  <img class="stock-item__img" src="images/stock/4.png" alt="item image">
+                </div>
+                <div class="stock-item__name">Вишня</div>
+                <div class="stock-item__size-box">
+                  <div class="stock-item__size">0,5 л</div>
+                  <div class="stock-item__size">1 л</div>
+                </div>
+                <div class="stock-item__num-box">
+                  <input class="stock-item__number" type="number" value="1"></input>
+                  <div class="stock-item__price">140 грн</div>
+                </div>
+              </div>
+              <div class="stock-item__add-box">
+                <a class="stock-item__add" href="#">Добавить в корзину</a>
+              </div>
+            </div>
+
+
+
+            <div class="stock-item">
+              <div class="stock-item__descr">
+                <div class="stock-item__img-box">
+                  <img class="stock-item__img" src="images/stock/5.png" alt="item image">
+                </div>
+                <div class="stock-item__name">Клубника</div>
+                <div class="stock-item__size-box">
+                  <div class="stock-item__size">0,5 л</div>
+                  <div class="stock-item__size">1 л</div>
+                </div>
+                <div class="stock-item__num-box">
+                  <input class="stock-item__number" type="number" value="1"></input>
+                  <div class="stock-item__price">100 грн</div>
+                </div>
+              </div>
+              <div class="stock-item__add-box">
+                <a class="stock-item__add" href="#">Добавить в корзину</a>
+              </div>
+            </div>
+
+            <div class="stock-item">
+              <div class="stock-item__descr">
+                <div class="stock-item__img-box">
+                  <img class="stock-item__img" src="images/stock/6.png" alt="item image">
+                </div>
+                <div class="stock-item__name">Малина-ежевика</div>
+                <div class="stock-item__size-box">
+                  <div class="stock-item__size">0,5 л</div>
+                  <div class="stock-item__size">1 л</div>
+                </div>
+                <div class="stock-item__num-box">
+                  <input class="stock-item__number" type="number" value="1"></input>
+                  <div class="stock-item__price">120 грн</div>
+                </div>
+              </div>
+              <div class="stock-item__add-box">
+                <a class="stock-item__add" href="#">Добавить в корзину</a>
+              </div>
+            </div>
+
+
+
+
+
+            <div class="stock-item">
+              <div class="stock-item__descr">
+                <div class="stock-item__img-box">
+                  <img class="stock-item__img" src="images/stock/1.png" alt="item image">
+                </div>
+                <div class="stock-item__name">Яблоко - лайм</div>
+                <div class="stock-item__size-box">
+                  <div class="stock-item__size">0,5 л</div>
+                  <div class="stock-item__size">1 л</div>
+                </div>
+                <div class="stock-item__num-box">
+                  <input class="stock-item__number" type="number" value="1"></input>
+                  <div class="stock-item__price">100 грн</div>
+                </div>
+              </div>
+              <div class="stock-item__add-box">
+                <a class="stock-item__add" href="#">Добавить в корзину</a>
+              </div>
+            </div>
+
+            <div class="stock-item">
+              <div class="stock-item__descr">
+                <div class="stock-item__img-box">
+                  <img class="stock-item__img" src="images/stock/2.png" alt="item image">
+                </div>
+                <div class="stock-item__name">Апельсин-манго</div>
+                <div class="stock-item__size-box">
+                  <div class="stock-item__size">0,5 л</div>
+                  <div class="stock-item__size">1 л</div>
+                </div>
+                <div class="stock-item__num-box">
+                  <input class="stock-item__number" type="number" value="1"></input>
+                  <div class="stock-item__price">120 грн</div>
+                </div>
+              </div>
+              <div class="stock-item__add-box">
+                <a class="stock-item__add" href="#">Добавить в корзину</a>
+              </div>
+            </div>
+
+
+
+            <div class="stock-item">
+              <div class="stock-item__descr">
+                <div class="stock-item__img-box">
+                  <img class="stock-item__img" src="images/stock/3.png" alt="item image">
+                </div>
+                <div class="stock-item__name">Лимон</div>
+                <div class="stock-item__size-box">
+                  <div class="stock-item__size">0,5 л</div>
+                  <div class="stock-item__size">1 л</div>
+                </div>
+                <div class="stock-item__num-box">
+                  <input class="stock-item__number" type="number" value="1"></input>
+                  <div class="stock-item__price">100 грн</div>
+                </div>
+              </div>
+              <div class="stock-item__add-box">
+                <a class="stock-item__add" href="#">Добавить в корзину</a>
+              </div>
+            </div>
+
+            <div class="stock-item">
+              <div class="stock-item__descr">
+                <div class="stock-item__img-box">
+                  <img class="stock-item__img" src="images/stock/4.png" alt="item image">
+                </div>
+                <div class="stock-item__name">Вишня</div>
+                <div class="stock-item__size-box">
+                  <div class="stock-item__size">0,5 л</div>
+                  <div class="stock-item__size">1 л</div>
+                </div>
+                <div class="stock-item__num-box">
+                  <input class="stock-item__number" type="number" value="1"></input>
+                  <div class="stock-item__price">140 грн</div>
+                </div>
+              </div>
+              <div class="stock-item__add-box">
+                <a class="stock-item__add" href="#">Добавить в корзину</a>
+              </div>
+            </div>
+
+
+
+            <div class="stock-item">
+              <div class="stock-item__descr">
+                <div class="stock-item__img-box">
+                  <img class="stock-item__img" src="images/stock/5.png" alt="item image">
+                </div>
+                <div class="stock-item__name">Клубника</div>
+                <div class="stock-item__size-box">
+                  <div class="stock-item__size">0,5 л</div>
+                  <div class="stock-item__size">1 л</div>
+                </div>
+                <div class="stock-item__num-box">
+                  <input class="stock-item__number" type="number" value="1"></input>
+                  <div class="stock-item__price">100 грн</div>
+                </div>
+              </div>
+              <div class="stock-item__add-box">
+                <a class="stock-item__add" href="#">Добавить в корзину</a>
+              </div>
+            </div>
+
+            <div class="stock-item">
+              <div class="stock-item__descr">
+                <div class="stock-item__img-box">
+                  <img class="stock-item__img" src="images/stock/6.png" alt="item image">
+                </div>
+                <div class="stock-item__name">Малина-ежевика</div>
+                <div class="stock-item__size-box">
+                  <div class="stock-item__size">0,5 л</div>
+                  <div class="stock-item__size">1 л</div>
+                </div>
+                <div class="stock-item__num-box">
+                  <input id="1" class="stock-item__number" type="number" value="1"></input>
+                  <div class="stock-item__price">120 грн</div>
+                </div>
+              </div>
+              <div class="stock-item__add-box">
+                <a class="stock-item__add" href="#">Добавить в корзину</a>
+              </div>
+            </div>
+
+
+
+
+
+            <div class="stock-item">
+              <div class="stock-item__descr">
+                <div class="stock-item__img-box">
+                  <img class="stock-item__img" src="images/stock/1.png" alt="item image">
+                </div>
+                <div class="stock-item__name">Яблоко - лайм</div>
+                <div class="stock-item__size-box">
+                  <div class="stock-item__size">0,5 л</div>
+                  <div class="stock-item__size">1 л</div>
+                </div>
+                <div class="stock-item__num-box">
+                  <input class="stock-item__number" type="number" value="1"></input>
+                  <div class="stock-item__price">100 грн</div>
+                </div>
+              </div>
+              <div class="stock-item__add-box">
+                <a class="stock-item__add" href="#">Добавить в корзину</a>
+              </div>
+            </div>
+
+            <div class="stock-item">
+              <div class="stock-item__descr">
+                <div class="stock-item__img-box">
+                  <img class="stock-item__img" src="images/stock/2.png" alt="item image">
+                </div>
+                <div class="stock-item__name">Апельсин-манго</div>
+                <div class="stock-item__size-box">
+                  <div class="stock-item__size">0,5 л</div>
+                  <div class="stock-item__size">1 л</div>
+                </div>
+                <div class="stock-item__num-box">
+                  <input class="stock-item__number" type="number" value="1"></input>
+                  <div class="stock-item__price">120 грн</div>
+                </div>
+              </div>
+              <div class="stock-item__add-box">
+                <a class="stock-item__add" href="#">Добавить в корзину</a>
+              </div>
+            </div>
+
+
+
+            <div class="stock-item">
+              <div class="stock-item__descr">
+                <div class="stock-item__img-box">
+                  <img class="stock-item__img" src="images/stock/3.png" alt="item image">
+                </div>
+                <div class="stock-item__name">Лимон</div>
+                <div class="stock-item__size-box">
+                  <div class="stock-item__size">0,5 л</div>
+                  <div class="stock-item__size">1 л</div>
+                </div>
+                <div class="stock-item__num-box">
+                  <input class="stock-item__number" type="number" value="1"></input>
+                  <div class="stock-item__price">100 грн</div>
+                </div>
+              </div>
+              <div class="stock-item__add-box">
+                <a class="stock-item__add" href="#">Добавить в корзину</a>
+              </div>
+            </div>
+
+            <div class="stock-item">
+              <div class="stock-item__descr">
+                <div class="stock-item__img-box">
+                  <img class="stock-item__img" src="images/stock/4.png" alt="item image">
+                </div>
+                <div class="stock-item__name">Вишня</div>
+                <div class="stock-item__size-box">
+                  <div class="stock-item__size">0,5 л</div>
+                  <div class="stock-item__size">1 л</div>
+                </div>
+                <div class="stock-item__num-box">
+                  <input class="stock-item__number" type="number" value="1"></input>
+                  <div class="stock-item__price">140 грн</div>
+                </div>
+              </div>
+              <div class="stock-item__add-box">
+                <a class="stock-item__add" href="#">Добавить в корзину</a>
+              </div>
+            </div>
+
+
+
+            <div class="stock-item">
+              <div class="stock-item__descr">
+                <div class="stock-item__img-box">
+                  <img class="stock-item__img" src="images/stock/5.png" alt="item image">
+                </div>
+                <div class="stock-item__name">Клубника</div>
+                <div class="stock-item__size-box">
+                  <div class="stock-item__size">0,5 л</div>
+                  <div class="stock-item__size">1 л</div>
+                </div>
+                <div class="stock-item__num-box">
+                  <input class="stock-item__number" type="number" value="1"></input>
+                  <div class="stock-item__price">100 грн</div>
+                </div>
+              </div>
+              <div class="stock-item__add-box">
+                <a class="stock-item__add" href="#">Добавить в корзину</a>
+              </div>
+            </div>
+
+            <div class="stock-item">
+              <div class="stock-item__descr">
+                <div class="stock-item__img-box">
+                  <img class="stock-item__img" src="images/stock/6.png" alt="item image">
+                </div>
+                <div class="stock-item__name">Малина-ежевика</div>
+                <div class="stock-item__size-box">
+                  <div class="stock-item__size">0,5 л</div>
+                  <div class="stock-item__size">1 л</div>
+                </div>
+                <div class="stock-item__num-box">
+                  <input id="1" class="stock-item__number" type="number" value="1"></input>
+                  <div class="stock-item__price">120 грн</div>
+                </div>
+              </div>
+              <div class="stock-item__add-box">
+                <a class="stock-item__add" href="#">Добавить в корзину</a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      </div>
+      </div>
+    </section>
+
+    <section class="advantages">
+      <div class="container advantages__container">
+        <div class="advantages__content">
+          <h4 class="advantages__title">Наши преумещества</h4>
+          <p class="advantages__text">
+            Мы доставляем качественную продукцию,доставка быстро<br>
+            и без всяких задержок.Доставим в любую точку СНГ<br>
+            и часто проводим конкурсы на которых люди<br>
+            выиграли уже очень много призов.Есть<br>
+            оффлайн магазин который работает<br>
+            24/7 принимаем заказы весь день<br>
+            без отдыха,и всегда готовы<br>
+            помочь нашему<br>
+            покупателю<br>
+
+          </p>
+        </div>
+        <div class="advantages__items">
+          <div class="advantages-item__box advantages-item__1">
+            <div class="advantages-item">
+              <div class="advantages-item__content">
+                <h5 class="advantages-item__title">Свежие фрукты</h5>
+                <p class="advantages-item__text">Соки только из самых
+                  свежих фруктов</p>
+              </div>
+            </div>
+          </div>
+          <div class="advantages-item__box advantages-item__2">
+            <div class="advantages-item">
+              <div class="advantages-item__content">
+                <h5 class="advantages-item__title">График</h5>
+                <p class="advantages-item__text">Работае без выходных</p>
+              </div>
+            </div>
+          </div>
+          <div class="advantages-item__box advantages-item__3">
+            <div class="advantages-item">
+              <div class="advantages-item__content">
+                <h5 class="advantages-item__title">Скидки</h5>
+                <p class="advantages-item__text">Практически каждый день
+                  проводим скидки</p>
+              </div>
+            </div>
+          </div>
+          <div class="advantages-item__box advantages-item__4">
+            <div class="advantages-item">
+              <div class="advantages-item__content">
+                <h5 class="advantages-item__title">Доставка</h5>
+                <p class="advantages-item__text">Одна из самых быстрых
+                  доставок в интернете</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <section class="reviews">
+      <div class="container">
+        <h4 class="reviews-title">Отзывы покупателей</h4>
+        <div class="reviews-items">
+          <div class="reviews-item">
+            <div class="reviews-item__name">Олег</div>
+            <p class="reviews-item__text">
+              Первый заказ и чудо,
+              сок просто прекрасный
+            </p>
+          </div>
+          <div class="reviews-item">
+            <div class="reviews-item__name">Ирина</div>
+            <p class="reviews-item__text">
+              Прекрасно!Все так вкусно что я даже не ожидала
+            </p>
+          </div>
+          <div class="reviews-item">
+            <div class="reviews-item__name">Александр</div>
+            <p class="reviews-item__text">
+              Все вкусно и быстро
+            </p>
+          </div>
+          <div class="reviews-item">
+            <div class="reviews-item__name">Олег</div>
+            <p class="reviews-item__text">
+              Первый заказ и чудо,
+              сок просто прекрасный
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <footer class="footer">
+      <div class="container">
+        <div class="why__title">Будь с нами</div>
+        <div class="footer-content">
+          <div class="footer-connect">
+            <div class="footer-adress">
+              Мелитополь<br>
+              пр.Богдана Хмельницкого
+            </div>
+            <div class="footer-connect__box">
+              <div class="footer-connect__time">
+                <p class="footer-connect__time-text">8.00 - 24.00</p>
+                <p class="footer-connect__time-text">Без выходных</p>
+              </div>
+              <div class="footer-connect__phone">
+                <a class="footer-connect__phone-link" href="tel:380683739307">38-068-37-39-307</a>
+                <a class="footer-connect__phone-link" href="tel:380973659567">38-097-36-59-567</a>
+              </div>
+            </div>
+            <div class="footer-connect__social">
+              <a class="footer-connect__social-link" href="#">
+                <img class="footer-connect__social-img" src="images/icons/facebook.svg" alt="">
+              </a>
+              <a class="footer-connect__social-link footer-connect__social-link__center" href="#">
+                <img class="footer-connect__social-img" src="images/icons/inst.svg" alt="">
+              </a>
+              <a class="footer-connect__social-link" href="#">
+                <img class="footer-connect__social-img" src="images/icons/vk.svg" alt="">
+              </a>
+            </div>
+          </div>
+          <img class="footer-map" src="images/map.png"></img>
+        </div>
+      </div>
+    </footer>
+
+
+  </main>
+
+  <script src="js/number_plugin.js" type="text/javascript"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
