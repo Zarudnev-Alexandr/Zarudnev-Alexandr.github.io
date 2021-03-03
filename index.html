@@ -1,412 +1,498 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Open+Sans:wght@400;600;700;800&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/index.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
 
   <header class="header">
-    <div class="header__inner">
-      <div class="header-top">
-        <a class="logo-link" href="#">
-          <img src="images/logo.png" class="logo"></img>
-        </a>
-        <nav class="menu">
-          <ul class="menu-list">
-            <li class="menu-list__item">
-              <a href="#" class="menu-list__link">
-                Главная
-              </a>
-            </li>
-            <li class="menu-list__item">
-              <a href="#" class="menu-list__link">
-                О нас
-              </a>
-            </li>
-            <li class="menu-list__item">
-              <a href="#" class="menu-list__link">
-                Отзывы
-              </a>
-            </li>
-            <li class="menu-list__item">
-              <a href="#" class="menu-list__link">
-                Контакты
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <button class="menu__btn"></button>
-        <div class="menu__contact">
-          <a class="menu__phone menu__dop" href="tel:+0683739307">068-37-39-307</a>
-          <a class="menu__price menu__dop" href="#">777 грн</a>
-        </div>
-      </div>
-      <div class="header-bottom">
-        <div class="header-bottom__inner">
-          <div class="header-bottom__content">
-            <h3 class="header-bottom__title">Твой новый плюшевый друг ждет тебя</h3>
-            <p class="header-bottom__text">
-              Магазин плюшевых игрушек,которые хотят с кем-то подружиться.Забери дружка прямо с облака,в один клик
-            </p>
-            <a class="header-bottom__link" href="#">Купить друга</a>
+    <div class="header-inner">
+      <a class="logo-link" href="#">
+        <img class="logo-img" src="images/logo.svg" alt="Logo image">
+      </a>
+      <div class="header-content">
+        <div class="header-top">
+          <h4 class="header-title">Matkat
+            Venäjälle!</h4>
+          <div class="header-top__box">
+            <form class="header-top__search-form" action="#">
+              <input class="header-top__search" type="search" placeholder="Hae...">
+              <button class="header-top__search-btn" type="submit"></button>
+            </form>
+            <form class="header-top__select-form" action="#">
+              <select class="header-top__select" size="3">
+                <option selected value="1">Suomen</option>
+                <option value="2">Suomen2</option>
+                <option value="3">Suomen3</option>
+                <option value="4">Suomen4</option>
+                <option value="5">Suomen5</option>
+              </select>
+            </form>
           </div>
+        </div>
+        <div class="header-bottom">
+          <nav class="menu">
+            <button class="menu-btn">
+              <img src="images/icons/bars.svg" alt="">
+            </button>
+            <ul class="menu-list">
+              <li class="menu-list__item">
+                <a href="#" class="menu-list__link">
+                  PÄÄ
+                </a>
+              </li>
+              <li class="menu-list__item">
+                <a href="#" class="menu-list__link">
+                  MAJOITUS
+                </a>
+              </li>
+              <li class="menu-list__item">
+                <a href="#" class="menu-list__link">
+                  VETÄÄ
+                </a>
+              </li>
+              <li class="menu-list__item">
+                <a href="#" class="menu-list__link">
+                  PUOLEENSA
+                </a>
+              </li>
+              <li class="menu-list__item">
+                <a href="#" class="menu-list__link">
+                  TOIMINTA
+                </a>
+              </li>
+              <li class="menu-list__item">
+                <a href="#" class="menu-list__link">
+                  VIISA-TUKI
+                </a>
+              </li>
+              <li class="menu-list__item">
+                <a href="#" class="menu-list__link">
+                  BLOGI
+                </a>
+              </li>
+              <li class="menu-list__item">
+                <a href="#" class="menu-list__link">
+                  MEISTÄ
+                </a>
+              </li>
+              <li class="menu-list__item">
+                <a href="#" class="menu-list__link">
+                  YHTEYSTIEDOT
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </div>
   </header>
 
-  <!-- <div class="cloud-1"></div> -->
+   <main class="main">
 
-  <section class="main">
-    <div class="shop">
-      <div class="shop-inner">
-        <div class="shop-menu">
-          <button class="shop-menu__dop"></button>
-          <button class="shop-menu__search"></button>
-        </div>
-        <div class="shop-content">
-          <div class="shop-content__best">
-            <div class="shop-content__best-info">
-              <a class="shop-content__best-link" href="#">купить</a>
-              <div class="shop-content__best-price">2000 грн</div>
+    <section class="firstslider">
+      <div class="firstslider-inner">
+        <div class="firstslider-items">
+
+          <div class="firstslider-item">
+            <div class="firstslider-item__content-box">
+              <h5 class="firstslider-item__title">HEI! TERVETULOA VENÄJÄLLE</h5>
+              <p class="firstslider-item__text">
+                Mennä matkalle, joka muuttaa elämääsi ikuisesti
+              </p>
+              <a class="firstslider-item__link" href="#">KATSO LISÄÄ</a>
             </div>
-            <div class="shop-content__best-imgbox">
-              <img class="shop-contnt__best-img" src="images/best.jpg" alt="">
-            </div>
-            <a class="shop-content__best-showall" href="#">Посмотреть все</a>
           </div>
-          <div class="shop-items">
 
-            <div class="shop-items__inner">
-              <div class="shop-item">
-                <div class="shop-item__info">
-                  <a class="shop-item__link">купить</a>
-                  <div class="shop-item__price">700 грн</div>
-                </div>
-                <div class="shop-item__imgbox">
-                  <img class="shop-item__img" src="images/shop/1.jpg" alt="">
-                </div>
-              </div>
-
-              <div class="shop-item">
-                <div class="shop-item__info">
-                  <a class="shop-item__link">купить</a>
-                  <div class="shop-item__price">700 грн</div>
-                </div>
-                <div class="shop-item__imgbox">
-                  <img class="shop-item__img" src="images/shop/2.jpg" alt="">
-                </div>
-              </div>
-
-              <div class="shop-item">
-                <div class="shop-item__info">
-                  <a class="shop-item__link">купить</a>
-                  <div class="shop-item__price">700 грн</div>
-                </div>
-                <div class="shop-item__imgbox">
-                  <img class="shop-item__img" src="images/shop/3.jpg" alt="">
-                </div>
-              </div>
-
-              <div class="shop-item">
-                <div class="shop-item__info">
-                  <a class="shop-item__link">купить</a>
-                  <div class="shop-item__price">700 грн</div>
-                </div>
-                <div class="shop-item__imgbox">
-                  <img class="shop-item__img" src="images/shop/4.jpg" alt="">
-                </div>
-              </div>
+          <div class="firstslider-item">
+            <div class="firstslider-item__content-box">
+              <h5 class="firstslider-item__title">HEI! TERVETULOA VENÄJÄLLE</h5>
+              <p class="firstslider-item__text">
+                Mennä matkalle, joka muuttaa elämääsi ikuisesti
+              </p>
+              <a class="firstslider-item__link" href="#">KATSO LISÄÄ</a>
             </div>
-            <div class="shop-items__inner">
-              <div class="shop-item">
-                <div class="shop-item__info">
-                  <a class="shop-item__link">купить</a>
-                  <div class="shop-item__price">700 грн</div>
-                </div>
-                <div class="shop-item__imgbox">
-                  <img class="shop-item__img" src="images/shop/1.jpg" alt="">
-                </div>
-              </div>
-
-              <div class="shop-item">
-                <div class="shop-item__info">
-                  <a class="shop-item__link">купить</a>
-                  <div class="shop-item__price">700 грн</div>
-                </div>
-                <div class="shop-item__imgbox">
-                  <img class="shop-item__img" src="images/shop/2.jpg" alt="">
-                </div>
-              </div>
-
-              <div class="shop-item">
-                <div class="shop-item__info">
-                  <a class="shop-item__link">купить</a>
-                  <div class="shop-item__price">700 грн</div>
-                </div>
-                <div class="shop-item__imgbox">
-                  <img class="shop-item__img" src="images/shop/3.jpg" alt="">
-                </div>
-              </div>
-
-              <div class="shop-item">
-                <div class="shop-item__info">
-                  <a class="shop-item__link">купить</a>
-                  <div class="shop-item__price">700 грн</div>
-                </div>
-                <div class="shop-item__imgbox">
-                  <img class="shop-item__img" src="images/shop/4.jpg" alt="">
-                </div>
-              </div>
-            </div>
-            <div class="shop-items__inner">
-              <div class="shop-item">
-                <div class="shop-item__info">
-                  <a class="shop-item__link">купить</a>
-                  <div class="shop-item__price">700 грн</div>
-                </div>
-                <div class="shop-item__imgbox">
-                  <img class="shop-item__img" src="images/shop/1.jpg" alt="">
-                </div>
-              </div>
-
-              <div class="shop-item">
-                <div class="shop-item__info">
-                  <a class="shop-item__link">купить</a>
-                  <div class="shop-item__price">700 грн</div>
-                </div>
-                <div class="shop-item__imgbox">
-                  <img class="shop-item__img" src="images/shop/2.jpg" alt="">
-                </div>
-              </div>
-
-              <div class="shop-item">
-                <div class="shop-item__info">
-                  <a class="shop-item__link">купить</a>
-                  <div class="shop-item__price">700 грн</div>
-                </div>
-                <div class="shop-item__imgbox">
-                  <img class="shop-item__img" src="images/shop/3.jpg" alt="">
-                </div>
-              </div>
-
-              <div class="shop-item">
-                <div class="shop-item__info">
-                  <a class="shop-item__link">купить</a>
-                  <div class="shop-item__price">700 грн</div>
-                </div>
-                <div class="shop-item__imgbox">
-                  <img class="shop-item__img" src="images/shop/4.jpg" alt="">
-                </div>
-              </div>
-            </div>
-            <div class="shop-items__inner">
-              <div class="shop-item">
-                <div class="shop-item__info">
-                  <a class="shop-item__link">купить</a>
-                  <div class="shop-item__price">700 грн</div>
-                </div>
-                <div class="shop-item__imgbox">
-                  <img class="shop-item__img" src="images/shop/1.jpg" alt="">
-                </div>
-              </div>
-
-              <div class="shop-item">
-                <div class="shop-item__info">
-                  <a class="shop-item__link">купить</a>
-                  <div class="shop-item__price">700 грн</div>
-                </div>
-                <div class="shop-item__imgbox">
-                  <img class="shop-item__img" src="images/shop/2.jpg" alt="">
-                </div>
-              </div>
-
-              <div class="shop-item">
-                <div class="shop-item__info">
-                  <a class="shop-item__link">купить</a>
-                  <div class="shop-item__price">700 грн</div>
-                </div>
-                <div class="shop-item__imgbox">
-                  <img class="shop-item__img" src="images/shop/3.jpg" alt="">
-                </div>
-              </div>
-
-              <div class="shop-item">
-                <div class="shop-item__info">
-                  <a class="shop-item__link">купить</a>
-                  <div class="shop-item__price">700 грн</div>
-                </div>
-                <div class="shop-item__imgbox">
-                  <img class="shop-item__img" src="images/shop/4.jpg" alt="">
-                </div>
-              </div>
-            </div>
-            <div class="shop-items__inner">
-              <div class="shop-item">
-                <div class="shop-item__info">
-                  <a class="shop-item__link">купить</a>
-                  <div class="shop-item__price">700 грн</div>
-                </div>
-                <div class="shop-item__imgbox">
-                  <img class="shop-item__img" src="images/shop/1.jpg" alt="">
-                </div>
-              </div>
-
-              <div class="shop-item">
-                <div class="shop-item__info">
-                  <a class="shop-item__link">купить</a>
-                  <div class="shop-item__price">700 грн</div>
-                </div>
-                <div class="shop-item__imgbox">
-                  <img class="shop-item__img" src="images/shop/2.jpg" alt="">
-                </div>
-              </div>
-
-              <div class="shop-item">
-                <div class="shop-item__info">
-                  <a class="shop-item__link">купить</a>
-                  <div class="shop-item__price">700 грн</div>
-                </div>
-                <div class="shop-item__imgbox">
-                  <img class="shop-item__img" src="images/shop/3.jpg" alt="">
-                </div>
-              </div>
-
-              <div class="shop-item">
-                <div class="shop-item__info">
-                  <a class="shop-item__link">купить</a>
-                  <div class="shop-item__price">700 грн</div>
-                </div>
-                <div class="shop-item__imgbox">
-                  <img class="shop-item__img" src="images/shop/4.jpg" alt="">
-                </div>
-              </div>
-            </div>
-
           </div>
+
+          <div class="firstslider-item">
+            <div class="firstslider-item__content-box">
+              <h5 class="firstslider-item__title">HEI! TERVETULOA VENÄJÄLLE</h5>
+              <p class="firstslider-item__text">
+                Mennä matkalle, joka muuttaa elämääsi ikuisesti
+              </p>
+              <a class="firstslider-item__link" href="#">KATSO LISÄÄ</a>
+            </div>
+          </div>
+
+          <div class="firstslider-item">
+            <div class="firstslider-item__content-box">
+              <h5 class="firstslider-item__title">HEI! TERVETULOA VENÄJÄLLE</h5>
+              <p class="firstslider-item__text">
+                Mennä matkalle, joka muuttaa elämääsi ikuisesti
+              </p>
+              <a class="firstslider-item__link" href="#">KATSO LISÄÄ</a>
+            </div>
+          </div>
+
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- <div class="cloud-2"></div> -->
-
-    <div class="info">
+    <section class="info">
       <div class="info-inner">
+        <h4 class="info-title">KORELA avaa uusia ikkunoita ikivanhalle Venäjälle edut</h4>
+        <div class="info-items">
 
-        <div class="info-item info-item__1">
-          <h5 class="info-item__title">Справедливая цена</h5>
-          <p class="info-item__text">
-            Мы гарантируем низкую цену,
-            и много акций,без наценки и
-            лишних переплат,поэтому и
-            стоит выбрать,именно нас
-          </p>
-        </div>
+          <div class="info-item">
+            <div class="info-item__card info-item__card-1">
+              <img class="info-item__img" src="images/info/1.svg" alt="">
+              <h5 class="info-item__title">yksilöllinen lähestymistapa</h5>
+            </div>
+          </div>
 
-        <div class="info-item info-item__2">
-          <h5 class="info-item__title">Качество</h5>
-          <p class="info-item__text">
-            У нас используеться только
-            качественный материал,и екологически
-            чистый,материалы которые не линяют и не выгорают
-          </p>
-        </div>
+          <div class="info-item">
+            <div class="info-item__card info-item__card-2">
+              <img class="info-item__img" src="images/info/2.svg" alt="">
+              <h5 class="info-item__title">kumppaniverkosto koko maassa</h5>
+            </div>
+          </div>
 
-        <div class="info-item info-item__3">
-          <h5 class="info-item__title">Оперативность</h5>
-          <p class="info-item__text">
-            Оформляем мишек в день,заказа,
-            или на следующий день.Заказы принимаем 24/7
-          </p>
-        </div>
+          <div class="info-item">
+            <div class="info-item__card info-item__card-3">
+              <img class="info-item__img" src="images/info/3.svg" alt="">
+              <h5 class="info-item__title">matkailutuki</h5>
+            </div>
+          </div>
 
-        <div class="info-item info-item__4">
-          <h5 class="info-item__title">Наличие</h5>
-          <p class="info-item__text">
-            Всегда в наличии, любой товар
-            каждый новый день мы шьем новые игрушки
-          </p>
+          <div class="info-item">
+            <div class="info-item__card info-item__card-4">
+              <img class="info-item__img" src="images/info/4.svg" alt="">
+              <h5 class="info-item__title">viisumituki</h5>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-item__card info-item__card-1">
+              <img class="info-item__img" src="images/info/1.svg" alt="">
+              <h5 class="info-item__title">yksilöllinen lähestymistapa</h5>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-item__card info-item__card-2">
+              <img class="info-item__img" src="images/info/2.svg" alt="">
+              <h5 class="info-item__title">kumppaniverkosto koko maassa</h5>
+            </div>
+          </div>
+
         </div>
 
       </div>
-    </div>
+      <div class="info-img"></div>
+    </section>
 
-    <div class="cloud-3"></div>
-
-    <div class="items">
-      <div class="items-inner">
-        <div class="items-list">
-
-          <div class="items-item items-item__1">
-            <div class="items-item__title">Оставляешь
-              заявку</div>
-            <div class="items-item__text">
-              Заполняете форму,или оформляете по звонку
-            </div>
-          </div>
-
-          <div class="items-item items-item__2">
-            <div class="items-item__title">Мы связуемся</div>
-            <div class="items-item__text">
-              После заявки,мы
-              связуемся с вами
-            </div>
-          </div>
-
-          <div class="items-item items-item__3">
-            <div class="items-item__title">Отправляем
-              игрушку</div>
-            <div class="items-item__text">
-              После заказа,мы
-              отправляем заказ,
-              и скидуем номер накладной
-            </div>
-          </div>
-
-          <div class="items-item items-item__4">
-            <div class="items-item__title">Забираешь
-              посылку</div>
-            <div class="items-item__text">
-              Ты приходишь на почту
-              и забираешь игрушку
-            </div>
-          </div>
-
-        </div>
-        <div class="items-link__box">
-          <a class="items-link" href="#">Заказать</a>
-        </div>
+    <div class="dop">
+      <h5 class="dop-title">Erikoistarjous</h5>
+      <div class="dop-descr">
+        <p class="dop-text">Vasta nyt saat 50% alennuksen tilauksesta</p>
+        <a class="dop-link" href="#">KLIKKAA TÄSTÄ</a>
       </div>
     </div>
 
-  </section>
+    <section class="place">
+      <h5 class="place-title">Tarvitsetko asuntoa? Täytämme toiveesi!</h5>
+      <div class="place-items">
+
+        <div class="place-item">
+          <img class="place-item__img" src="images/place/1.jpg" alt="">
+          <div class="place-item__linkbox">
+            <a class="place-item__link" href="#">Venäjän Karjala</a>
+          </div>
+        </div>
+
+        <div class="place-item">
+          <img class="place-item__img" src="images/place/1.jpg" alt="">
+          <div class="place-item__linkbox">
+            <a class="place-item__link" href="#">Venäjän Karjala</a>
+          </div>
+        </div>
+
+        <div class="place-item">
+          <img class="place-item__img" src="images/place/1.jpg" alt="">
+          <div class="place-item__linkbox">
+            <a class="place-item__link" href="#">Venäjän Karjala</a>
+          </div>
+        </div>
+
+        <div class="place-item">
+          <img class="place-item__img" src="images/place/1.jpg" alt="">
+          <div class="place-item__linkbox">
+            <a class="place-item__link" href="#">Venäjän Karjala</a>
+          </div>
+        </div>
+
+        <div class="place-item">
+          <img class="place-item__img" src="images/place/1.jpg" alt="">
+          <div class="place-item__linkbox">
+            <a class="place-item__link" href="#">Venäjän Karjala</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="cards">
+      <div class="cards-items">
+
+        <div class="cards-item">
+          <img class="cards-item__img" src="images/cards/1.jpg" alt="">
+          <div class="cards-item__hoverbox">
+            <h6 class="cards-item__hoverbox-title">Bileam</h6>
+            <p class="cards-item__hoverbox-text">
+              Luostari saaristossa Ladoga-järvellä
+            </p>
+            <a class="cards-item__hoverbox-link" href="#">Oppia lisää</a>
+          </div>
+        </div>
+
+        <div class="cards-item">
+          <img class="cards-item__img" src="images/cards/2.jpg" alt="">
+          <div class="cards-item__hoverbox">
+            <h6 class="cards-item__hoverbox-title">Kizhi</h6>
+            <p class="cards-item__hoverbox-text">
+              Ainutlaatuinen historiallinen, kulttuurinen ja luonnollinen kompleksi
+            </p>
+            <a class="cards-item__hoverbox-link" href="#">Oppia lisää</a>
+          </div>
+        </div>
+
+        <div class="cards-item">
+          <img class="cards-item__img" src="images/cards/3.jpg" alt="">
+          <div class="cards-item__hoverbox">
+            <h6 class="cards-item__hoverbox-title">Bileam</h6>
+            <p class="cards-item__hoverbox-text">
+              Luostari saaristossa Ladoga-järvellä
+            </p>
+            <a class="cards-item__hoverbox-link" href="#">Oppia lisää</a>
+          </div>
+        </div>
+
+        <div class="cards-item">
+          <img class="cards-item__img" src="images/cards/4.jpg" alt="">
+          <div class="cards-item__hoverbox">
+            <h6 class="cards-item__hoverbox-title">Kizhi</h6>
+            <p class="cards-item__hoverbox-text">
+              Ainutlaatuinen historiallinen, kulttuurinen ja luonnollinen kompleksi
+            </p>
+            <a class="cards-item__hoverbox-link" href="#">Oppia lisää</a>
+          </div>
+        </div>
+
+        <div class="cards-item">
+          <img class="cards-item__img" src="images/cards/5.jpg" alt="">
+          <div class="cards-item__hoverbox">
+            <h6 class="cards-item__hoverbox-title">Bileam</h6>
+            <p class="cards-item__hoverbox-text">
+              Luostari saaristossa Ladoga-järvellä
+            </p>
+            <a class="cards-item__hoverbox-link" href="#">Oppia lisää</a>
+          </div>
+        </div>
+
+        <div class="cards-item">
+          <img class="cards-item__img" src="images/cards/6.jpg" alt="">
+          <div class="cards-item__hoverbox">
+            <h6 class="cards-item__hoverbox-title">Bileam</h6>
+            <p class="cards-item__hoverbox-text">
+              Luostari saaristossa Ladoga-järvellä
+            </p>
+            <a class="cards-item__hoverbox-link" href="#">Oppia lisää</a>
+          </div>
+        </div>
+
+        <div class="cards-item">
+          <img class="cards-item__img" src="images/cards/1.jpg" alt="">
+          <div class="cards-item__hoverbox">
+            <h6 class="cards-item__hoverbox-title">Kizhi</h6>
+            <p class="cards-item__hoverbox-text">
+              Ainutlaatuinen historiallinen, kulttuurinen ja luonnollinen kompleksi
+            </p>
+            <a class="cards-item__hoverbox-link" href="#">Oppia lisää</a>
+          </div>
+        </div>
+
+        <div class="cards-item">
+          <img class="cards-item__img" src="images/cards/2.jpg" alt="">
+          <div class="cards-item__hoverbox">
+            <h6 class="cards-item__hoverbox-title">Bileam</h6>
+            <p class="cards-item__hoverbox-text">
+              Luostari saaristossa Ladoga-järvellä
+            </p>
+            <a class="cards-item__hoverbox-link" href="#">Oppia lisää</a>
+          </div>
+        </div>
+
+        <div class="cards-item">
+          <img class="cards-item__img" src="images/cards/3.jpg" alt="">
+          <div class="cards-item__hoverbox">
+            <h6 class="cards-item__hoverbox-title">Kizhi</h6>
+            <p class="cards-item__hoverbox-text">
+              Ainutlaatuinen historiallinen, kulttuurinen ja luonnollinen kompleksi
+            </p>
+            <a class="cards-item__hoverbox-link" href="#">Oppia lisää</a>
+          </div>
+        </div>
+
+        <div class="cards-item">
+          <img class="cards-item__img" src="images/cards/4.jpg" alt="">
+          <div class="cards-item__hoverbox">
+            <h6 class="cards-item__hoverbox-title">Bileam</h6>
+            <p class="cards-item__hoverbox-text">
+              Luostari saaristossa Ladoga-järvellä
+            </p>
+            <a class="cards-item__hoverbox-link" href="#">Oppia lisää</a>
+          </div>
+        </div>
+
+        <div class="cards-item">
+          <img class="cards-item__img" src="images/cards/5.jpg" alt="">
+          <div class="cards-item__hoverbox">
+            <h6 class="cards-item__hoverbox-title">Kizhi</h6>
+            <p class="cards-item__hoverbox-text">
+              Ainutlaatuinen historiallinen, kulttuurinen ja luonnollinen kompleksi
+            </p>
+            <a class="cards-item__hoverbox-link" href="#">Oppia lisää</a>
+          </div>
+        </div>
+
+        <div class="cards-item">
+          <img class="cards-item__img" src="images/cards/6.jpg" alt="">
+          <div class="cards-item__hoverbox">
+            <h6 class="cards-item__hoverbox-title">Bileam</h6>
+            <p class="cards-item__hoverbox-text">
+              Luostari saaristossa Ladoga-järvellä
+            </p>
+            <a class="cards-item__hoverbox-link" href="#">Oppia lisää</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="stat">
+      <div class="stat-inner">
+        <h4 class="stat-title">Korela on</h4>
+        <div class="stat-items">
+
+          <div class="stat-item">
+            <div class="stat-item__num">29</div>
+            <div class="stat-item__text">vuotta <br> matkailua</div>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-item__num">3524</div>
+            <div class="stat-item__text">ryhmät hyväksytään Venäjällä</div>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-item__num">25</div>
+            <div class="stat-item__text">kumppaneita Suomessa</div>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-item__num">289</div>
+            <div class="stat-item__text">Venäläiset kumppanit työskentelevät kanssamme</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="connect">
+      <div class="connect-inner">
+        <h4 class="connect-title"></h4>
+        <form class="connect-form" action="#">
+          <input class="connect-input connect-input__name" type="text" placeholder="Sinun nimesi">
+          <input class="connect-input connect-input__email" type="text" placeholder="sähköposti">
+          <input class="connect-input connect-input__phone" type="text" placeholder="puhelinnumerosi">
+          <input class="connect-input connect-input__link" type="text" placeholder="maa">
+          <div class="connect-dop">
+            <textarea class="connect-input__textarea" placeholder="kommentteja"></textarea>
+            <label class="connect-label">
+              <input type="checkbox" class="connect-checkbox">
+              <p class="connect-chechbox__text">Hyväksyn henkilötietojen käsittelykäytännön</p>
+            </label>
+            <button class="connect-btn" type="submit">LÄHETTÄÄ</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
 
   <footer class="footer">
-    <div class="footer-top">
-      <h3 class="footer-top__title">График работы</h3>
-      <div class="footer-top__date">ПН-ВС 8.00-22.00</div>
-      <div class="footer-top__connect">
-        <a href="#">
-          <img class="footer-top__link" src="images/icons/inst.svg" alt="">
-        </a>
-        <a href="#">
-          <img class="footer-top__link" src="images/icons/tel.svg" alt="">
-        </a>
+    <div class="footer-inner">
+      <div class="footer-info">
+        <div class="footer-info__title">MATKAILUTOIMISTO KORELA</div>
+        <p class="footer-info__adress">Kuibyshev katu 26-206 Petroskoi, Karjala, Venäjä</p>
+        <a class="footer-info__phone" href="tel:+78142780391">+7 8142 78-03-91</a>
+        <a class="footer-info__email" href="mailto:korela@sampo.ru">korela@sampo.ru</a>
+      </div>
+      <div class="footer-copy">
+        <div class="footer-copy__socialbox">
+          <a class="footer-copy__social-link footer-copy__social-link__twitter" href="#">
+            <svg width="32" height="31" viewBox="0 0 32 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M15.6594 0C24.3084 0 31.319 6.7509 31.319 15.0774C31.319 23.4049 24.3084 30.1548 15.6594 30.1548C7.01045 30.1548 0 23.4048 0 15.0774C0 6.7509 7.01056 0 15.6594 0Z"
+                fill="white" />
+              <path
+                d="M25.4496 10.1576C24.7655 10.4421 24.0294 10.6334 23.2573 10.7201C24.0462 10.2781 24.651 9.57987 24.9358 8.746C24.1979 9.1559 23.3816 9.45276 22.5115 9.61196C21.8156 8.91938 20.8242 8.48682 19.7261 8.48682C17.6199 8.48682 15.9111 10.0822 15.9111 12.0516C15.9111 12.3314 15.9444 12.6038 16.0099 12.8648C12.8389 12.716 10.0261 11.2958 8.14501 9.13892C7.81615 9.66568 7.62823 10.2772 7.62823 10.9312C7.62823 12.1675 8.30154 13.2605 9.32533 13.8986C8.699 13.8797 8.11169 13.7204 7.59597 13.4519V13.4972C7.59597 15.2253 8.91132 16.6662 10.6573 16.9941C10.3373 17.0752 10.0006 17.1195 9.65216 17.1195C9.4065 17.1195 9.16773 17.0978 8.93476 17.0554C9.42016 18.4726 10.8296 19.5035 12.5002 19.5318C11.1937 20.4892 9.54841 21.0584 7.76035 21.0584C7.45202 21.0584 7.14864 21.0414 6.84912 21.0085C8.53935 22.0205 10.5438 22.6113 12.6999 22.6113C19.7192 22.6113 23.5578 17.1761 23.5578 12.4645L23.547 12.0027C24.2908 11.5013 24.9377 10.8737 25.4496 10.1576Z"
+                fill="#111111" />
+            </svg>
+          </a>
+          <a class="footer-copy__social-link footer-copy__social-link__inst" href="#">
+            <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M30.2692 8.84552C30.1981 7.24691 29.9373 6.14787 29.5637 5.19555C29.1783 4.18468 28.5854 3.27965 27.8085 2.52729C27.0495 1.76323 26.1305 1.16952 25.1225 0.793452C24.1562 0.423128 23.0532 0.164614 21.4405 0.0941305C19.8157 0.0176782 19.2999 0 15.1791 0C11.0582 0 10.5424 0.0176782 8.92363 0.0881613C7.3109 0.158644 6.20216 0.417389 5.24166 0.787483C4.22163 1.16952 3.30861 1.75726 2.54961 2.52729C1.7788 3.27965 1.18007 4.19065 0.800458 5.18981C0.426865 6.14787 0.166067 7.24094 0.0949618 8.83955C0.0178343 10.4501 0 10.9614 0 15.0462C0 19.131 0.0178343 19.6423 0.0889398 21.2469C0.160045 22.8455 0.421074 23.9445 0.794668 24.8968C1.18007 25.9077 1.7788 26.8127 2.54961 27.5651C3.30861 28.3292 4.22765 28.9229 5.23564 29.2989C6.20216 29.6693 7.30488 29.9278 8.91784 29.9983C10.5364 30.069 11.0524 30.0864 15.1733 30.0864C19.2942 30.0864 19.81 30.069 21.4287 29.9983C23.0414 29.9278 24.1502 29.6693 25.1107 29.2989C27.1505 28.5172 28.7632 26.9186 29.5519 24.8968C29.9252 23.9388 30.1863 22.8455 30.2574 21.2469C30.3285 19.6423 30.3463 19.131 30.3463 15.0462C30.3463 10.9614 30.3403 10.4501 30.2692 8.84552ZM27.5359 21.1293C27.4706 22.5987 27.2216 23.3921 27.0141 23.9211C26.5041 25.2318 25.4546 26.2721 24.1323 26.7776C23.5987 26.9833 22.7924 27.2301 21.3159 27.2947C19.715 27.3654 19.2349 27.3828 15.1851 27.3828C11.1353 27.3828 10.6492 27.3654 9.05403 27.2947C7.5717 27.2301 6.77124 26.9833 6.2376 26.7776C5.57958 26.5366 4.98063 26.1545 4.49447 25.6549C3.99048 25.1671 3.60507 24.5793 3.36188 23.9271C3.15435 23.3981 2.90537 22.5987 2.84028 21.1353C2.76895 19.5484 2.75134 19.0722 2.75134 15.0579C2.75134 11.0436 2.76895 10.5617 2.84028 8.98075C2.90537 7.51139 3.15435 6.71794 3.36188 6.18897C3.60507 5.53648 3.99048 4.943 4.50049 4.46087C4.99244 3.96129 5.58537 3.57926 6.24362 3.33842C6.77726 3.13271 7.58374 2.88591 9.06005 2.82116C10.661 2.75068 11.1413 2.733 15.1909 2.733C19.2467 2.733 19.7268 2.75068 21.3219 2.82116C22.8043 2.88591 23.6047 3.13271 24.1384 3.33842C24.7964 3.57926 25.3953 3.96129 25.8815 4.46087C26.3855 4.94874 26.7709 5.53648 27.0141 6.18897C27.2216 6.71794 27.4706 7.51713 27.5359 8.98075C27.607 10.5676 27.6248 11.0436 27.6248 15.0579C27.6248 19.0722 27.607 19.5424 27.5359 21.1293Z"
+                fill="white" />
+              <path
+                d="M15.1789 7.31787C10.8743 7.31787 7.38184 10.7794 7.38184 15.0464C7.38184 19.3133 10.8743 22.7749 15.1789 22.7749C19.4837 22.7749 22.976 19.3133 22.976 15.0464C22.976 10.7794 19.4837 7.31787 15.1789 7.31787ZM15.1789 20.0597C12.3863 20.0597 10.1211 17.8146 10.1211 15.0464C10.1211 12.2781 12.3863 10.0331 15.1789 10.0331C17.9717 10.0331 20.2367 12.2781 20.2367 15.0464C20.2367 17.8146 17.9717 20.0597 15.1789 20.0597Z"
+                fill="white" />
+              <path
+                d="M25.1046 7.01221C25.1046 8.00882 24.2896 8.81689 23.2841 8.81689C22.2789 8.81689 21.4639 8.00882 21.4639 7.01221C21.4639 6.01537 22.2789 5.20752 23.2841 5.20752C24.2896 5.20752 25.1046 6.01537 25.1046 7.01221Z"
+                fill="white" />
+            </svg>
+          </a>
+          <a class="footer-copy__social-link footer-copy__social-link__facebook" href="#">
+            <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16.5 33C25.6127 33 33 25.6127 33 16.5C33 7.3873 25.6127 0 16.5 0C7.3873 0 0 7.3873 0 16.5C0 25.6127 7.3873 33 16.5 33Z"
+                fill="white" />
+              <path
+                d="M20.6481 17.1459H17.7039V27.9322H13.2431V17.1459H11.1216V13.3552H13.2431V10.9022C13.2431 9.14799 14.0764 6.40112 17.7436 6.40112L21.0478 6.41495V10.0945H18.6504C18.2571 10.0945 17.7042 10.291 17.7042 11.1278V13.3587H21.0378L20.6481 17.1459Z"
+                fill="black" />
+            </svg>
+          </a>
+        </div>
+        <p class="footer-copy__text">© Verkkosivujen kehittäminen ja tuki</p>
+        <p class="footer-copy__corp">LLC "INTERSO", 2021</p>
       </div>
     </div>
-    <div class="footer-bottom">
-      <p class="footer-bottom__copy footer-bottom__dop">2021 Все права защищены</p>
-      <a class="footer-bottom__tel footer-bottom__dop" href="tel:+0683739307">Тел 068-37-39-307</a>
-    </div>
   </footer>
+
+
+
+
+
 
   <script src="js/main.min.js"></script>
 </body>
