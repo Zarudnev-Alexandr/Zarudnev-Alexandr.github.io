@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="google" content="notranslate">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nike</title>
+  <title>Nike man</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
@@ -15,8 +15,7 @@
 </head>
 
 <body class="notranslate">
-
-  <header class="header header-main">
+  <header class="header header-man">
     <div class="header-inner">
       <button class="header-btn">
         <svg width="52" height="15" viewBox="0 0 52 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -24,25 +23,32 @@
           <rect x="0.285889" y="11.7857" width="23.5714" height="3.21429" fill="#ECECEC" />
         </svg>
       </button>
-      <nav class="menu-main">
-        <ul class="menu-main__list">
-          <li class="menu-main__list-item menu-main__list-item--active">
-            -30%
-          </li>
-          <li class="menu-main__list-item">
-            NIKE
-          </li>
-          <li class="menu-main__list-item">
-            AIR
-          </li>
-          <li class="menu-main__list-item">
-            JORDAN
-          </li>
-          <li class="menu-main__list-item">
-            COLLECTION
-          </li>
-        </ul>
-      </nav>
+      <div class="header-man__formbox">
+        <form action="#" class="header-man__form">
+          <select class="header-man__select header-man__select-color select">
+            <option selected disabled>Color</option>
+            <option value="1">Black</option>
+            <option value="2">White</option>
+            <option value="3">Grey</option>
+          </select>
+        </form>
+        <form action="#" class="header-man__form">
+          <select class="header-man__select header-man__select-price select">
+            <option selected disabled>Price</option>
+            <option value="1">200$</option>
+            <option value="2">250$</option>
+            <option value="3">400$</option>
+          </select>
+        </form>
+        <form action="#" class="header-man__form">
+          <select class="header-man__select header-man__select-size select">
+            <option selected disabled>Size</option>
+            <option value="1">23</option>
+            <option value="2">24</option>
+            <option value="3">24.5</option>
+          </select>
+        </form>
+      </div>
       <div class="header-linkbox">
         <a class="header-link header-link__search" href="#">
           <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -64,13 +70,13 @@
 
   <div class="header-drop">
     <ul class="header-drop__list">
-      <li class="header-drop__item header-drop__item--active">
-        <a class="header-drop__link" href="#">
+      <li class="header-drop__item">
+        <a class="header-drop__link" href="index.html">
           HOME
         </a>
       </li>
-      <li class="header-drop__item">
-        <a class="header-drop__link" href="man.html">
+      <li class="header-drop__item header-drop__item--active">
+        <a class="header-drop__link" href="#">
           MAN
         </a>
       </li>
@@ -92,50 +98,43 @@
     </ul>
   </div>
 
-  <main class="main">
-    <div class="main-inner">
-      <div class="main-top">
-        <h1 class="main-title">
-          AIR<br>WESTBROOK
-        </h1>
-        <div class="main-content">
-          <div class="main-price">250$</div>
-          <select class="main-size">
-            <option value="1" class="main-size__option">43</option>
-            <option value="2" class="main-size__option">44</option>
-            <option value="3" selected class="main-size__option">44.5</option>
-          </select>
-          <div class="main-linkbox">
-            <a class="main-link" href="#">ADD TO CART</a>
-          </div>
+  <section class="man">
+    <div class="man-inner">
+
+      <div class="breadcrumb">
+        <ul class="breadcrumb-list">
+          <li class="breadcrumb-list__item">
+            <a class="breadcrumb-list__link" href="index.html">Home</a>
+          </li>
+          <li class="breadcrumb-list__item">
+            <a class="breadcrumb-list__link" href="#">Man</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="man-slider">
+        <div class="man-slider__item">
+          <img class="man-slider__item-img" src="images/boots.png" alt="">
+        </div>
+        <div class="man-slider__item">
+          <img class="man-slider__item-img" src="images/boots.png" alt="">
+        </div>
+        <div class="man-slider__item">
+          <img class="man-slider__item-img" src="images/boots.png" alt="">
+        </div>
+        <div class="man-slider__item">
+          <img class="man-slider__item-img" src="images/boots.png" alt="">
         </div>
       </div>
-      <div class="main-bottom">
-        <div class="main-bottom__socialbox">
-          <a class="main-bottom__social-link" href="#">
-            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M6.51564 15.5086C13.5915 15.5086 17.461 9.64648 17.461 4.56328C17.461 4.39679 17.4575 4.23099 17.4501 4.0661C18.2011 3.52305 18.8539 2.84538 19.369 2.07403C18.6797 2.38053 17.9378 2.58658 17.1598 2.6798C17.954 2.20337 18.5638 1.45002 18.8514 0.551972C18.1081 0.992628 17.2849 1.31277 16.4087 1.48569C15.7067 0.737958 14.7072 0.270355 13.6005 0.270355C11.4763 0.270355 9.75343 1.99308 9.75343 4.11667C9.75343 4.41869 9.78725 4.71223 9.85318 4.99385C6.65599 4.83298 3.82079 3.30232 1.92367 0.974625C1.59343 1.54302 1.40286 2.20349 1.40286 2.90821C1.40286 4.24268 2.08202 5.42109 3.11469 6.11022C2.48357 6.09085 1.89076 5.91759 1.37247 5.62921C1.3719 5.64537 1.3719 5.66108 1.3719 5.67828C1.3719 7.54135 2.69788 9.09689 4.45833 9.44937C4.13497 9.53732 3.79476 9.58468 3.44389 9.58468C3.19644 9.58468 2.95519 9.56037 2.72081 9.51531C3.21055 11.0438 4.63078 12.156 6.31452 12.1872C4.99782 13.2192 3.3392 13.8339 1.53656 13.8339C1.2265 13.8339 0.920006 13.8161 0.618896 13.7806C2.32144 14.8719 4.34309 15.5087 6.51575 15.5087"
-                fill="#F3F3F3" />
-            </svg>
-          </a>
-          <a class="main-bottom__social-link" href="#">
-            <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M7.54894 20V10.8777H10.6097L11.0689 7.32156H7.54894V5.05147C7.54894 4.0222 7.83359 3.32076 9.31123 3.32076L11.1928 3.31999V0.13923C10.8674 0.0969453 9.75045 0 8.45045 0C5.73586 0 3.87739 1.65697 3.87739 4.69927V7.32156H0.807373V10.8777H3.87739V20H7.54894Z"
-                fill="#F3F3F3" />
-            </svg>
-          </a>
-        </div>
-        <div class="main-bottom__langbox">
-          <a href="" class="main-bottom__lang-link">EN</a>
-          <a href="" class="main-bottom__lang-link">DE</a>
-        </div>
+
+      <div class="man-content">
+        <div class="man-content__price">250</div>
+        <div class="man-content__text">Air Jordan Westbrook</div>
+        <a class="man-content__link">ADD TO CART</a>
       </div>
+
     </div>
-
-
-  </main>
+  </section>
 
 
   <script src="js/main.min.js"></script>
