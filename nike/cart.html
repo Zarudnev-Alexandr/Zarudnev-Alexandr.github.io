@@ -23,31 +23,21 @@
           <rect x="0.285889" y="11.7857" width="23.5714" height="3.21429" fill="#ECECEC" />
         </svg>
       </button>
-      <div class="header-man__formbox navmenu">
-        <form action="#" class="header-man__form">
-          <select class="header-man__select header-man__select-color select">
-            <option selected disabled>Color</option>
-            <option value="1">Black</option>
-            <option value="2">White</option>
-            <option value="3">Grey</option>
-          </select>
-        </form>
-        <form action="#" class="header-man__form">
-          <select class="header-man__select header-man__select-price select">
-            <option selected disabled>Price</option>
-            <option value="1">200$</option>
-            <option value="2">250$</option>
-            <option value="3">400$</option>
-          </select>
-        </form>
-        <form action="#" class="header-man__form">
-          <select class="header-man__select header-man__select-size select">
-            <option selected disabled>Size</option>
-            <option value="1">23</option>
-            <option value="2">24</option>
-            <option value="3">24.5</option>
-          </select>
-        </form>
+      <div class="breadcrumb air-breadcrumb">
+        <ul class="breadcrumb-list">
+          <li class="breadcrumb-list__item">
+            <a class="breadcrumb-list__link" href="index.html">Home</a>
+          </li>
+          <li class="breadcrumb-list__item">
+            <a class="breadcrumb-list__link" href="man.html">Man</a>
+          </li>
+          <li class="breadcrumb-list__item">
+            <a class="breadcrumb-list__link" href="air.html">Air WestBrook</a>
+          </li>
+          <li class="breadcrumb-list__item">
+            <a class="breadcrumb-list__link">Cart</a>
+          </li>
+        </ul>
       </div>
       <div class="header-linkbox">
         <a class="header-link header-link__search" href="#">
@@ -75,8 +65,8 @@
           HOME
         </a>
       </li>
-      <li class="header-drop__item header-drop__item--active">
-        <a class="header-drop__link" href="#">
+      <li class="header-drop__item">
+        <a class="header-drop__link" href="man.html">
           MAN
         </a>
       </li>
@@ -98,43 +88,55 @@
     </ul>
   </div>
 
-  <section class="bg man">
-    <div class="man-inner">
+  <div class="cart bg">
+    <div class="cart-inner">
+      <div class="cart-items">
 
-      <div class="breadcrumb">
-        <ul class="breadcrumb-list">
-          <li class="breadcrumb-list__item">
-            <a class="breadcrumb-list__link" href="index.html">Home</a>
-          </li>
-          <li class="breadcrumb-list__item">
-            <a class="breadcrumb-list__link">Man</a>
-          </li>
-        </ul>
+        <div class="cart-item">
+          <form class="cart-item__form" action="#">
+            <div class="cart-select__sizebox">
+              <select class="select air-select cart-select__size select-size">
+                <div class="cart-select__size-name">Size</div>
+                <option value="">43</option>
+                <option value="">44</option>
+                <option selected value="3">4.5</option>
+              </select>
+            </div>
+            <div class="cart-select__colorbox">
+              <select class="select cart-select cart-select__color select-color">
+                <div class="cart-select__color-name">Color</div>
+                <option class="select-color__option select-color__option-1" value="1">
+                </option>
+                <option class="select-color__option select-color__option-2" value="2">
+                </option>
+                <option class="select-color__option select-color__option-3" value="3">
+                </option>
+              </select>
+            </div>
+            <div class="numbox">
+              Quanity<input class="input air-input" min="1" type="number" value="1">
+            </div>
+          </form>
+          <div class="cart-item__imgbox">
+            <img class="cart-item__img" src="" alt="">
+          </div>
+          <button class="cart-item__del"></button>
+          <div class="cart-item__title">AIR WESTBROOK</div>
+        </div>
+
       </div>
-
-      <div class="man-slider">
-        <div class="man-slider__item">
-          <img class="man-slider__item-img" src="images/boots.png" alt="">
-        </div>
-        <div class="man-slider__item">
-          <img class="man-slider__item-img" src="images/boots.png" alt="">
-        </div>
-        <div class="man-slider__item">
-          <img class="man-slider__item-img" src="images/boots.png" alt="">
-        </div>
-        <div class="man-slider__item">
-          <img class="man-slider__item-img" src="images/boots.png" alt="">
-        </div>
+      <div class="cart-price">250</div>
+      <button class="cart-btn">CHECKOUT</button>
+      <div class="cart-pay">
+        <img class="cart-pay__img" src="" alt="">
+        <img class="cart-pay__img" src="" alt="">
+        <img class="cart-pay__img" src="" alt="">
       </div>
-
-      <div class="man-content content">
-        <div class="man-content__price content-price">250</div>
-        <div class="man-content__text content-text">Air Jordan Westbrook</div>
-        <a class="man-content__link content-link" href="air.html">ADD TO CART</a>
-      </div>
-
     </div>
-  </section>
+  </div>
+  </div>
+
+
 
 
   <script src="js/main.min.js"></script>

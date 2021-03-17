@@ -20,7 +20,9 @@ $(function(){
   $('.select').styler();
 
   $('.header-btn').on('click', function(){
-    $('.header-drop').toggleClass('header-drop--active')
+    $('.header-drop').toggleClass('header-drop--active');
+    $('.navmenu').toggleClass('navmenu--active');
+    $('body').toggleClass('body--active');
   });
 
   $('.header-drop__item').on('click', function(){
