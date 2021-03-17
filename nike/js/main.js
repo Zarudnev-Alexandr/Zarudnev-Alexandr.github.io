@@ -1,6 +1,16 @@
 let vh = window.innerHeight * 0.01;
 document.documentElement.style.setProperty('--vh', `${vh}px`);
 
+$(window).scroll(function () {
+  if ($(window).scrollTop() >= 50) {
+    $('.header').addClass('header-transparent');
+    $('.bg').addClass('bg-scroll');
+  } else {
+    $('.header').removeClass('header-transparent');
+    $('.bg').removeClass('bg-scroll');
+  }
+});
+
 $(function(){
 
   $('.input').styler();
