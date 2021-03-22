@@ -2,7 +2,7 @@ let vh = window.innerHeight * 0.01;
 document.documentElement.style.setProperty('--vh', `${vh}px`);
 
 $(window).scroll(function () {
-  if ($(window).scrollTop() >= 50) {
+  if ($(window).scrollTop() >= 1) {
     $('.header').addClass('header-transparent');
     $('.bg').addClass('bg-scroll');
   } else {
@@ -18,6 +18,10 @@ $(function(){
   $('.main-size').styler();
 
   $('.select').styler();
+
+  $('.cart-item__del').on('click', function(){
+    $(this).parent('.cart-item').css('display', 'none')
+  });
 
   $('.header-btn').on('click', function(){
     $('.header-drop').toggleClass('header-drop--active');
