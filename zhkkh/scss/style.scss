@@ -7,16 +7,39 @@
 .header{
   background-color: #1f487e;
   padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
   &__inner{
     display: flex;
     justify-content: space-between;
     align-items: center;
     
   }
+  &--menu{
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    transition: .2s;
+    div{
+      div{
+        button{
+          z-index: 100;
+          transition: .2s;
+        }
+        
+      }
+    }
+    
+  }
 }
 
 .logo__img{
   max-width: 70px;
+}
+
+.logo__link{
+  padding-left: 80px;
 }
 
 body{
@@ -62,10 +85,11 @@ body{
       }
     }
   }
+  
 }
 
 .menu{
-  position: absolute;
+  position: fixed;
   display: none;
   background-color: #1f487e;
   width: 100vw;
@@ -74,16 +98,28 @@ body{
   right: 0;
   bottom: 0;
   left: 0;  
-  &__list{
+  z-index: 99;
+  ui{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
+    
+    margin: 0 auto;
     & li{
       display: flex;
+      a{
+        font-size: 40px;
+        text-decoration: none;
+        &:hover{
+          color: $accent-color;
+        }
+      }
     }
   }
   &--active{
-    display: block;
+    display: flex;
+    transition: .2s;
   }
 }
 //------------------------Slider----------------------------
