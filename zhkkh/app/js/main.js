@@ -1,7 +1,10 @@
+
 $(function(){
 
   $('.menu__btn').on('click', function(){
     $('.menu').toggleClass('menu--active');
+    $('.menu__btn').toggleClass('menu__btn--active');
+    $('body').toggleClass('header--menu');
   });
 
   $('.top-slider__inner').slick({
@@ -33,5 +36,15 @@ $(function(){
       console.log(suggestion);
     }
   });
+  const select = $('.pay-detail__walltype-select').filterMultiSelect({
+    placeholderText: "nothing selected",
+    filterText: "Filter",
+    selectAllText: "Select All",
+    selectionLimit: 0,
+    caseSensitive:false,
+
+
+  });
+
 
 });

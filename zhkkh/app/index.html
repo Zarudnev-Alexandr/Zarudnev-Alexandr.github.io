@@ -5,7 +5,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link href="https://cdn.jsdelivr.net/npm/suggestions-jquery@21.12.0/dist/css/suggestions.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="./css/style.min.css" type="text/css"/>
 </head>
 <body>
@@ -34,11 +33,11 @@
 
   <div class="menu">
     <ui class="menu-list">
-      <li>Главная</li>
-      <li>Личный кабинет</li>
-      <li>Новости</li>
-      <li>Модули</li>
-      <li>О "ЭРА ЖКХ"</li>
+      <li><a class="manu-list__link" href="#">Главная</a></li>
+      <li><a class="manu-list__link" href="#">Личный кабинет</a></li>
+      <li><a class="manu-list__link" href="#">Новости</a></li>
+      <li><a class="manu-list__link" href="#">Модули</a></li>
+      <li><a class="manu-list__link" href="#">О "ЭРА ЖКХ"</a></li>
     </ui>
   </div>
 
@@ -129,7 +128,7 @@
               <div class="pay-detail__walltype-wrapper">
                 <label class="pay-detail__label">
                   Типы стен
-                  <select class="pay-detail__walltype-select">
+                  <select multiplename="pay-detail__walltype-select" class="pay-detail__walltype-select">
                     <option value="1">Монолитные или кирпичные</option>
                     <option value="1.25">Железобетонные</option>
                     <option value="1.5">Из прочих материалов</option>
@@ -614,9 +613,8 @@
   
 
 
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/suggestions-jquery@21.12.0/dist/js/jquery.suggestions.min.js"></script>
+  
   <script src = "js/main.min.js"></script>
+
 </body>
 </html>
