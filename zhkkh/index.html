@@ -89,24 +89,24 @@
           База данных расчетов
         </a>
       </div>
-      <div class="tabs__content">
-
-        <div class="tabs__content-switch">
-          <p class="tabs__content-switch__text">Орёл</p>
-          <label class="tabs__content-switch__label">
-            <input class="tabs__content-switch__input" type="checkbox">
-          </label>
-          <p class="tabs__content-switch__text">Россия</p>
-        </div>
+      <div class="tabs__content">       
 
         <!----------Content-1------------------------------------------------->
 
         <div class="tabs__content-item tabs__content-item--active" id="tab-1">
 
+          <div class="tabs__content-switch">
+            <p class="tabs__content-switch__text">Орёл</p>
+            <label class="tabs__content-switch__label">
+              <input class="tabs__content-switch__input" type="checkbox">
+            </label>
+            <p class="tabs__content-switch__text">Россия</p>
+          </div>
+
           <div class="pay-detail">
             <form class="pay-detail__form" action="#">
               
-              <div class="pay-detail__input-wrapper">
+              <div class="pay-detail__input-wrapper wrapper-switch__1">
                 <label class="pay-detail__label">
                   Адрес
                   <input type="text" id="address" class="pay-detail__input address" 
@@ -226,6 +226,47 @@
                       <option value="2">Cмешанные (деревянные и железобетонные)</option>
                       <option value="3">Деревянные</option>
                       <option value="4">Каменные своды по металлическим балкам</option>
+                    </select>
+                  </label>
+                </div>
+              </div>
+
+              <div class="pay-detail__input-wrapper wrapper-switch__2">
+                <label class="pay-detail__label">
+                  Адрес
+                  <input id="address" type="text" class="pay-detail__input address" placeholder="Введите адрес" required>
+                </label>
+                <label class="pay-detail__label">
+                  Управляющая организация
+                  <input type="text" class="pay-detail__input" placeholder="Введите название управляющей организации" required>
+                </label>
+                <label class="pay-detail__label">
+                  Размер платы
+                  <input type="number" class="pay-detail__input" value="0" min="0" step="0.01">
+                </label>
+                <label class="pay-detail__label">
+                  Площадь МКД общая
+                  <input type="number" class="pay-detail__input" value="0" min="0" step="0.01">
+                </label>
+                <label class="pay-detail__label">
+                  Площадь жилых и нежилых помещений
+                  <input type="number" class="pay-detail__input" value="0" min="0" step="0.01">
+                </label>
+                <label class="pay-detail__label">
+                  Этажность
+                  <input type="number" class="pay-detail__input" value="0" min="0" step="1">
+                </label>
+                <label class="pay-detail__label">
+                  Год ввода в эксплуатацию
+                  <input type="number" class="pay-detail__input" value="1980" min="1900" max="2022" step="1">
+                </label>
+                <div class="pay-detail__walltype-wrapper">
+                  <label class="pay-detail__label">
+                    Типы стен
+                    <select multiplename="pay-detail__walltype-select" class="pay-detail__walltype-select">
+                      <option value="1">Монолитные или кирпичные</option>
+                      <option value="1.25">Железобетонные</option>
+                      <option value="1.5">Из прочих материалов</option>
                     </select>
                   </label>
                 </div>
