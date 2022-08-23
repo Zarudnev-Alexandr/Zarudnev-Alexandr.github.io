@@ -36,7 +36,7 @@
       <li><a class="manu-list__link" href="#">Главная</a></li>
       <li><a class="manu-list__link" href="#">Личный кабинет</a></li>
       <li><a class="manu-list__link" href="#">Новости</a></li>
-      <li><a class="manu-list__link" href="#">Модули</a></li>
+      <li><a class="manu-list__link" href="#">Сервисы</a></li>
       <li><a class="manu-list__link" href="#">О "ЭРА ЖКХ"</a></li>
     </ui>
   </div>
@@ -78,306 +78,159 @@
 
   <section class="tabs">
     <div class="container">
-      <div class="tabs__top">
-        <a class="tabs__top-item tabs__top-item--active" href="#tab-1">
-          Детализация платы
+      <div class="tabs__top">        
+        <a class="tabs__top-item tabs__top-item--active" href="#tab-1" id="tabs-top__1">
+          Расчет размера платы за содержание общего имущества
         </a>
-        <a class="tabs__top-item" href="#tab-2">
-          Расчет размера платы
+        <a class="tabs__top-item " href="#tab-2" id="tabs-top__2">
+          Детализация платы за содержание общего имущества
         </a>
-        <a class="tabs__top-item" href="#tab-3">
-          База данных расшифровок
+        <a class="tabs__top-item" href="#tab-3" id="tabs-top__3">
+          База данных расчетов
         </a>
       </div>
       <div class="tabs__content">
 
-        <!-----Content-1---------------------------------------------------->
-
-        <div class="tabs__content-item tabs__content-item--active" id="tab-1">
-          <div class="pay-detail">
-            <form class="pay-detail__form" action="#">
-
-              <label class="pay-detail__label">
-                Адрес
-                <input id="address" type="text" class="pay-detail__input address" placeholder="Введите адрес" required>
-              </label>
-              <label class="pay-detail__label">
-                Управляющая организация
-                <input type="text" class="pay-detail__input" placeholder="Введите название управляющей организации" required>
-              </label>
-              <label class="pay-detail__label">
-                Размер платы
-                <input type="number" class="pay-detail__input" value="0" min="0" step="0.01">
-              </label>
-              <label class="pay-detail__label">
-                Площадь МКД общая
-                <input type="number" class="pay-detail__input" value="0" min="0" step="0.01">
-              </label>
-              <label class="pay-detail__label">
-                Площадь жилых и нежилых помещений
-                <input type="number" class="pay-detail__input" value="0" min="0" step="0.01">
-              </label>
-              <label class="pay-detail__label">
-                Этажность
-                <input type="number" class="pay-detail__input" value="0" min="0" step="1">
-              </label>
-              <label class="pay-detail__label">
-                Год ввода в эксплуатацию
-                <input type="number" class="pay-detail__input" value="1980" min="1900" max="2022" step="1">
-              </label>
-              <div class="pay-detail__walltype-wrapper">
-                <label class="pay-detail__label">
-                  Типы стен
-                  <select multiplename="pay-detail__walltype-select" class="pay-detail__walltype-select">
-                    <option value="1">Монолитные или кирпичные</option>
-                    <option value="1.25">Железобетонные</option>
-                    <option value="1.5">Из прочих материалов</option>
-                  </select>                  
-                </label>
-              </div>    
-              Оборудование и благоустройство (отметить)
-              <div class="pay-detail__equipment-wrapper">                 
-                <label class="pay-detail__label pay-detail__checkbox-label">     
-                  <span class="pay-detail__checkbox-text">Холодное водоснабжение</span>
-                  <div class="pay-detail__checkbox-wrapper">
-                    <input type="checkbox" class="pay-detail__checkbox">
-                    <span class="pay-detail__checkbox-span"></span>
-                  </div>
-                </label>
-                <label class="pay-detail__label pay-detail__checkbox-label">
-                  <span class="pay-detail__checkbox-text">Центральное отопление</span>
-                  <div class="pay-detail__checkbox-wrapper">
-                    <input type="checkbox" class="pay-detail__checkbox">
-                    <span class="pay-detail__checkbox-span"></span>
-                  </div>
-                </label>
-                <label class="pay-detail__label pay-detail__checkbox-label">
-                  <span class="pay-detail__checkbox-text">Водоотведение</span>
-                  <div class="pay-detail__checkbox-wrapper">
-                    <input type="checkbox" class="pay-detail__checkbox">
-                    <span class="pay-detail__checkbox-span"></span>
-                  </div>
-                </label>
-                <label class="pay-detail__label pay-detail__checkbox-label">
-                  <span class="pay-detail__checkbox-text">Горячее водоснабжение</span>
-                  <div class="pay-detail__checkbox-wrapper">
-                    <input type="checkbox" class="pay-detail__checkbox">
-                    <span class="pay-detail__checkbox-span"></span>
-                  </div>
-                </label>
-                <label class="pay-detail__label pay-detail__checkbox-label">
-                  <span class="pay-detail__checkbox-text">Газоснабжение</span>
-                  <div class="pay-detail__checkbox-wrapper">
-                    <input type="checkbox" class="pay-detail__checkbox">
-                    <span class="pay-detail__checkbox-span"></span>
-                  </div>
-                </label>
-                <label class="pay-detail__label pay-detail__checkbox-label">
-                  <span class="pay-detail__checkbox-text">Лифты</span>
-                  <div class="pay-detail__checkbox-wrapper">
-                    <input type="checkbox" class="pay-detail__checkbox">
-                    <span class="pay-detail__checkbox-span"></span>
-                  </div>
-                </label>
-                <label class="pay-detail__label pay-detail__checkbox-label">
-                  <span class="pay-detail__checkbox-text">Мусоропровод</span>
-                  <div class="pay-detail__checkbox-wrapper">
-                    <input type="checkbox" class="pay-detail__checkbox">
-                    <span class="pay-detail__checkbox-span"></span>
-                  </div>
-                </label>
-                <label class="pay-detail__label pay-detail__checkbox-label">
-                  <span class="pay-detail__checkbox-text">Локальная котельня</span>
-                  <div class="pay-detail__checkbox-wrapper">
-                    <input type="checkbox" class="pay-detail__checkbox">
-                    <span class="pay-detail__checkbox-span"></span>
-                  </div>
-                </label>
-                <label class="pay-detail__label pay-detail__checkbox-label">
-                  <span class="pay-detail__checkbox-text">Внутридомовой бойлер</span>
-                  <div class="pay-detail__checkbox-wrapper">
-                    <input type="checkbox" class="pay-detail__checkbox">
-                    <span class="pay-detail__checkbox-span"></span>
-                  </div>
-                </label>
-                <label class="pay-detail__label pay-detail__checkbox-label">
-                  <span class="pay-detail__checkbox-text">Детская и/или спортивная площадка</span>
-                  <div class="pay-detail__checkbox-wrapper">
-                    <input type="checkbox" class="pay-detail__checkbox">
-                    <span class="pay-detail__checkbox-span"></span>
-                  </div>
-                </label>
-                <label class="pay-detail__label pay-detail__checkbox-label">
-                  <span class="pay-detail__checkbox-text">Внутридомовые рециркуляционные насосы горячего водоснабжения</span>
-                  <div class="pay-detail__checkbox-wrapper">
-                    <input type="checkbox" class="pay-detail__checkbox">
-                    <span class="pay-detail__checkbox-span"></span>
-                  </div>
-                </label>
-                <label class="pay-detail__label pay-detail__checkbox-label">
-                  <span class="pay-detail__checkbox-text">Внутридомовая пожарная или пожарно-охранная сигнализация</span>
-                  <div class="pay-detail__checkbox-wrapper">
-                    <input type="checkbox" class="pay-detail__checkbox">
-                    <span class="pay-detail__checkbox-span"></span>
-                  </div>
-                </label>
-                <label class="pay-detail__label pay-detail__checkbox-label">
-                  <span class="pay-detail__checkbox-text">Внутридомовая автоматизированная система коммерческого учета электроэнергии и (или) теплоснабжения и (или) горячего
-                  водоснабжения и (или) холодного водоснабжения</span>
-                  <div class="pay-detail__checkbox-wrapper">
-                    <input type="checkbox" class="pay-detail__checkbox">
-                    <span class="pay-detail__checkbox-span"></span>
-                  </div>
-                </label>
-                <label class="pay-detail__label pay-detail__checkbox-label">
-                  <span class="pay-detail__checkbox-text">Узел(узлы) учета и (или) система автоматического регулирования (АСКУЭ)</span>
-                  <div class="pay-detail__checkbox-wrapper">
-                    <input type="checkbox" class="pay-detail__checkbox">
-                    <span class="pay-detail__checkbox-span"></span>
-                  </div>
-                </label>
-                <label class="pay-detail__label pay-detail__checkbox-label">
-                  <span class="pay-detail__checkbox-text">Уборка лестничных клеток</span>
-                  <div class="pay-detail__checkbox-wrapper">
-                    <input type="checkbox" class="pay-detail__checkbox">
-                    <span class="pay-detail__checkbox-span"></span>
-                  </div>
-                </label>
-              </div>
-              <button class="pay-detail__btn">ДЕТАЛИЗАЦИЯ</button>
-            </form>
-          </div>
+        <div class="tabs__content-switch">
+          <p class="tabs__content-switch__text">Орёл</p>
+          <label class="tabs__content-switch__label">
+            <input class="tabs__content-switch__input" type="checkbox">
+          </label>
+          <p class="tabs__content-switch__text">Россия</p>
         </div>
 
-        <!----------Content-2------------------------------------------------->
+        <!----------Content-1------------------------------------------------->
 
-        <div class="tabs__content-item" id="tab-2">
+        <div class="tabs__content-item tabs__content-item--active" id="tab-1">
 
           <div class="pay-detail">
             <form class="pay-detail__form" action="#">
-          
-              <label class="pay-detail__label">
-                Адрес
-                <input type="text" id="address" class="pay-detail__input address" 
-                placeholder="Введите адрес" required>
-              </label>
-              <label class="pay-detail__label">
-                Управляющая организация
-                <input type="text" class="pay-detail__input" placeholder="Введите название управляющей организации" required>
-              </label>
-              <label class="pay-detail__label">
-                Год ввода в эксплуатацию
-                <input type="number" class="pay-detail__input" value="0" min="1900" max="2022" step="1">
-              </label>
-              <label class="pay-detail__label">
-                Количество этажей, в том числе подземных этажей
-                <input type="number" class="pay-detail__input" value="0" min="0" step="1">
-              </label>
-              <label class="pay-detail__label">
-                Количество подземных этажей/подвал
-                <input type="number" class="pay-detail__input" value="0" min="0" step="1">
-              </label>
-              <label class="pay-detail__label">
-                Количество подъездов
-                <input type="number" class="pay-detail__input" value="0" min="0" step="1">
-              </label>
-              <label class="pay-detail__label">
-                Количество квартир
-                <input type="number" class="pay-detail__input" value="0" min="0" step="1">
-              </label>
-              <label class="pay-detail__label">
-                Количество проживающих
-                <input type="number" class="pay-detail__input" value="0" min="0" step="1">
-              </label>
-              <label class="pay-detail__label">
-                Площадь здания (многоквартирного дома), кв.м
-                <input type="number" class="pay-detail__input" value="0" min="0" step="0.1">
-              </label>
-              <label class="pay-detail__label">
-                Площадь жилых и нежилых помещений, кв.м
-                <input type="number" class="pay-detail__input" value="0" min="0" step="0.1">
-              </label>
-              <label class="pay-detail__label">
-                Площадь чердака, кв.м
-                <input type="number" class="pay-detail__input" value="0" min="0" step="0.1">
-              </label>
-              <label class="pay-detail__label">
-                Площадь подвала, кв.м
-                <input type="number" class="pay-detail__input" value="0" min="0" step="0.1">
-              </label>
-              <label class="pay-detail__label">
-                Площадь лестничных площадок и маршей, кв.м
-                <input type="number" class="pay-detail__input" value="0" min="0" step="0.1">
-              </label>
-              <label class="pay-detail__label">
-                Количество загрузочных клапанов мусоропровода
-                <input type="number" class="pay-detail__input" value="0" min="0" step="1">
-              </label>
-              <label class="pay-detail__label">
-                Количество лифтов
-                <input type="number" class="pay-detail__input" value="0" min="0" step="1">
-              </label>
-              <label class="pay-detail__label">
-                Площадь кабин лифтов
-                <input type="number" class="pay-detail__input" value="0" min="0" step="0.1">
-              </label>
-              <label class="pay-detail__label">
-                Норма прибыли % (доля за управление)
-                <input type="number" class="pay-detail__input" value="0" min="0" step="0.1">
-              </label>
-              <label class="pay-detail__label">
-                Базовая ставка обслуживание 1-го лифта
-                <input type="number" class="pay-detail__input" value="0" min="0" step="1">
-              </label>
-              <label class="pay-detail__label">
-                МРОТ
-                <input type="number" class="pay-detail__input" value="13890" min="0" step="1">
-              </label>
-              <div class="pay-detail__walltype-wrapper">
+              
+              <div class="pay-detail__input-wrapper">
                 <label class="pay-detail__label">
-                  Тип наружных стен
-                  <select class="pay-detail__walltype-select pay-detail__outwalltype-wrapper">
-                    <option value="1">Каменные (кирпичные)</option>
-                    <option value="2">Крупноблочные</option>
-                    <option value="3">Крупнопанельные</option>
-                    <option value="4">Облегченной кладки из кирпича</option>
-                    <option value="5">Из шлакоблоков</option>
-                    <option value="6">Из ракушечника</option>
-                    <option value="7">Смешанные (кирпичные и деревянные)</option>
-                    <option value="8">Сырцовые</option>
-                    <option value="9">Рубленные</option>
-                    <option value="10">Брусчатые</option>
-                  </select>
+                  Адрес
+                  <input type="text" id="address" class="pay-detail__input address" 
+                  placeholder="Введите адрес" required>
                 </label>
-              </div>
-              <div class="pay-detail__walltype-wrapper pay-detail__fundwalltype-wrapper">
                 <label class="pay-detail__label">
-                  Тип фундамента
-                  <select class="pay-detail__walltype-select">
-                    <option value="1">Бетонные</option>
-                    <option value="2">Крупноблочные</option>
-                    <option value="3">Ленточные бутовые</option>
-                    <option value="4">Облегченной кладки из кирпича</option>
-                    <option value="5">Из шлакоблоков</option>
-                    <option value="6">Из ракушечника</option>
-                    <option value="7">Смешанные (кирпичные и деревянные)</option>
-                    <option value="8">Сырцовые</option>
-                    <option value="9">Рубленные</option>
-                    <option value="10">Брусчатые</option>
-                  </select>
+                  Управляющая организация
+                  <input type="text" class="pay-detail__input" placeholder="Введите название управляющей организации" required>
                 </label>
-              </div>
-              <div class="pay-detail__walltype-wrapper pay-detail__lapwalltype-wrapper">
                 <label class="pay-detail__label">
-                  Тип перекрытия
-                  <select class="pay-detail__walltype-select">
-                    <option value="1">Железобетонные</option>
-                    <option value="2">Cмешанные (деревянные и железобетонные)</option>
-                    <option value="3">Деревянные</option>
-                    <option value="4">Каменные своды по металлическим балкам</option>
-                  </select>
+                  Год ввода в эксплуатацию
+                  <input type="number" class="pay-detail__input" value="0" min="1900" max="2022" step="1">
                 </label>
+                <label class="pay-detail__label">
+                  Количество этажей, в том числе подземных этажей
+                  <input type="number" class="pay-detail__input" value="0" min="0" step="1">
+                </label>
+                <label class="pay-detail__label">
+                  Количество подземных этажей/подвал
+                  <input type="number" class="pay-detail__input" value="0" min="0" step="1">
+                </label>
+                <label class="pay-detail__label">
+                  Количество подъездов
+                  <input type="number" class="pay-detail__input" value="0" min="0" step="1">
+                </label>
+                <label class="pay-detail__label">
+                  Количество квартир
+                  <input type="number" class="pay-detail__input" value="0" min="0" step="1">
+                </label>
+                <label class="pay-detail__label">
+                  Количество проживающих
+                  <input type="number" class="pay-detail__input" value="0" min="0" step="1">
+                </label>
+                <label class="pay-detail__label">
+                  Площадь здания (многоквартирного дома), кв.м
+                  <input type="number" class="pay-detail__input" value="0" min="0" step="0.1">
+                </label>
+                <label class="pay-detail__label">
+                  Площадь жилых и нежилых помещений, кв.м
+                  <input type="number" class="pay-detail__input" value="0" min="0" step="0.1">
+                </label>
+                <label class="pay-detail__label">
+                  Площадь чердака, кв.м
+                  <input type="number" class="pay-detail__input" value="0" min="0" step="0.1">
+                </label>
+                <label class="pay-detail__label">
+                  Площадь подвала, кв.м
+                  <input type="number" class="pay-detail__input" value="0" min="0" step="0.1">
+                </label>
+                <label class="pay-detail__label">
+                  Площадь лестничных площадок и маршей, кв.м
+                  <input type="number" class="pay-detail__input" value="0" min="0" step="0.1">
+                </label>
+                <label class="pay-detail__label">
+                  Количество загрузочных клапанов мусоропровода
+                  <input type="number" class="pay-detail__input" value="0" min="0" step="1">
+                </label>
+                <label class="pay-detail__label">
+                  Количество лифтов
+                  <input type="number" class="pay-detail__input" value="0" min="0" step="1">
+                </label>
+                <label class="pay-detail__label">
+                  Площадь кабин лифтов
+                  <input type="number" class="pay-detail__input" value="0" min="0" step="0.1">
+                </label>
+                <label class="pay-detail__label">
+                  Норма прибыли % (доля за управление)
+                  <input type="number" class="pay-detail__input" value="0" min="0" step="0.1">
+                </label>
+                <label class="pay-detail__label">
+                  Базовая ставка обслуживание 1-го лифта
+                  <input type="number" class="pay-detail__input" value="0" min="0" step="1">
+                </label>
+                <label class="pay-detail__label">
+                  МРОТ
+                  <input type="number" class="pay-detail__input" value="13890" min="0" step="1">
+                </label>
+                <div class="pay-detail__walltype-wrapper">
+                  <label class="pay-detail__label">
+                    Тип наружных стен
+                    <select class="pay-detail__walltype-select pay-detail__outwalltype-wrapper">
+                      <option value="1">Каменные (кирпичные)</option>
+                      <option value="2">Крупноблочные</option>
+                      <option value="3">Крупнопанельные</option>
+                      <option value="4">Облегченной кладки из кирпича</option>
+                      <option value="5">Из шлакоблоков</option>
+                      <option value="6">Из ракушечника</option>
+                      <option value="7">Смешанные (кирпичные и деревянные)</option>
+                      <option value="8">Сырцовые</option>
+                      <option value="9">Рубленные</option>
+                      <option value="10">Брусчатые</option>
+                    </select>
+                  </label>
+                </div>
+                <div class="pay-detail__walltype-wrapper pay-detail__fundwalltype-wrapper">
+                  <label class="pay-detail__label">
+                    Тип фундамента
+                    <select class="pay-detail__walltype-select">
+                      <option value="1">Бетонные</option>
+                      <option value="2">Крупноблочные</option>
+                      <option value="3">Ленточные бутовые</option>
+                      <option value="4">Облегченной кладки из кирпича</option>
+                      <option value="5">Из шлакоблоков</option>
+                      <option value="6">Из ракушечника</option>
+                      <option value="7">Смешанные (кирпичные и деревянные)</option>
+                      <option value="8">Сырцовые</option>
+                      <option value="9">Рубленные</option>
+                      <option value="10">Брусчатые</option>
+                    </select>
+                  </label>
+                </div>
+                <div class="pay-detail__walltype-wrapper pay-detail__lapwalltype-wrapper">
+                  <label class="pay-detail__label">
+                    Тип перекрытия
+                    <select class="pay-detail__walltype-select">
+                      <option value="1">Железобетонные</option>
+                      <option value="2">Cмешанные (деревянные и железобетонные)</option>
+                      <option value="3">Деревянные</option>
+                      <option value="4">Каменные своды по металлическим балкам</option>
+                    </select>
+                  </label>
+                </div>
               </div>
+              
               Энергообеспечение (отметить)
               <div class="pay-detail__equipment-wrapper pay-detail__electricity-wrapper">
                 <label class="pay-detail__label pay-detail__checkbox-label">
@@ -566,9 +419,171 @@
           
         </div>
 
+        <!-----Content-2---------------------------------------------------->
+        
+        <div class="tabs__content-item" id="tab-2">
+          <div class="pay-detail">
+            <form class="pay-detail__form" action="#">
+              
+              <div class="pay-detail__input-wrapper">
+                <label class="pay-detail__label">
+                  Адрес
+                  <input id="address" type="text" class="pay-detail__input address" placeholder="Введите адрес" required>
+                </label>
+                <label class="pay-detail__label">
+                  Управляющая организация
+                  <input type="text" class="pay-detail__input" placeholder="Введите название управляющей организации" required>
+                </label>
+                <label class="pay-detail__label">
+                  Размер платы
+                  <input type="number" class="pay-detail__input" value="0" min="0" step="0.01">
+                </label>
+                <label class="pay-detail__label">
+                  Площадь МКД общая
+                  <input type="number" class="pay-detail__input" value="0" min="0" step="0.01">
+                </label>
+                <label class="pay-detail__label">
+                  Площадь жилых и нежилых помещений
+                  <input type="number" class="pay-detail__input" value="0" min="0" step="0.01">
+                </label>
+                <label class="pay-detail__label">
+                  Этажность
+                  <input type="number" class="pay-detail__input" value="0" min="0" step="1">
+                </label>
+                <label class="pay-detail__label">
+                  Год ввода в эксплуатацию
+                  <input type="number" class="pay-detail__input" value="1980" min="1900" max="2022" step="1">
+                </label>
+                <div class="pay-detail__walltype-wrapper">
+                  <label class="pay-detail__label">
+                    Типы стен
+                    <select multiplename="pay-detail__walltype-select" class="pay-detail__walltype-select">
+                      <option value="1">Монолитные или кирпичные</option>
+                      <option value="1.25">Железобетонные</option>
+                      <option value="1.5">Из прочих материалов</option>
+                    </select>
+                  </label>
+                </div>
+              </div>
+              Оборудование и благоустройство (отметить)
+              <div class="pay-detail__equipment-wrapper">
+                <label class="pay-detail__label pay-detail__checkbox-label">
+                  <span class="pay-detail__checkbox-text">Холодное водоснабжение</span>
+                  <div class="pay-detail__checkbox-wrapper">
+                    <input type="checkbox" class="pay-detail__checkbox">
+                    <span class="pay-detail__checkbox-span"></span>
+                  </div>
+                </label>
+                <label class="pay-detail__label pay-detail__checkbox-label">
+                  <span class="pay-detail__checkbox-text">Центральное отопление</span>
+                  <div class="pay-detail__checkbox-wrapper">
+                    <input type="checkbox" class="pay-detail__checkbox">
+                    <span class="pay-detail__checkbox-span"></span>
+                  </div>
+                </label>
+                <label class="pay-detail__label pay-detail__checkbox-label">
+                  <span class="pay-detail__checkbox-text">Водоотведение</span>
+                  <div class="pay-detail__checkbox-wrapper">
+                    <input type="checkbox" class="pay-detail__checkbox">
+                    <span class="pay-detail__checkbox-span"></span>
+                  </div>
+                </label>
+                <label class="pay-detail__label pay-detail__checkbox-label">
+                  <span class="pay-detail__checkbox-text">Горячее водоснабжение</span>
+                  <div class="pay-detail__checkbox-wrapper">
+                    <input type="checkbox" class="pay-detail__checkbox">
+                    <span class="pay-detail__checkbox-span"></span>
+                  </div>
+                </label>
+                <label class="pay-detail__label pay-detail__checkbox-label">
+                  <span class="pay-detail__checkbox-text">Газоснабжение</span>
+                  <div class="pay-detail__checkbox-wrapper">
+                    <input type="checkbox" class="pay-detail__checkbox">
+                    <span class="pay-detail__checkbox-span"></span>
+                  </div>
+                </label>
+                <label class="pay-detail__label pay-detail__checkbox-label">
+                  <span class="pay-detail__checkbox-text">Лифты</span>
+                  <div class="pay-detail__checkbox-wrapper">
+                    <input type="checkbox" class="pay-detail__checkbox">
+                    <span class="pay-detail__checkbox-span"></span>
+                  </div>
+                </label>
+                <label class="pay-detail__label pay-detail__checkbox-label">
+                  <span class="pay-detail__checkbox-text">Мусоропровод</span>
+                  <div class="pay-detail__checkbox-wrapper">
+                    <input type="checkbox" class="pay-detail__checkbox">
+                    <span class="pay-detail__checkbox-span"></span>
+                  </div>
+                </label>
+                <label class="pay-detail__label pay-detail__checkbox-label">
+                  <span class="pay-detail__checkbox-text">Локальная котельня</span>
+                  <div class="pay-detail__checkbox-wrapper">
+                    <input type="checkbox" class="pay-detail__checkbox">
+                    <span class="pay-detail__checkbox-span"></span>
+                  </div>
+                </label>
+                <label class="pay-detail__label pay-detail__checkbox-label">
+                  <span class="pay-detail__checkbox-text">Внутридомовой бойлер</span>
+                  <div class="pay-detail__checkbox-wrapper">
+                    <input type="checkbox" class="pay-detail__checkbox">
+                    <span class="pay-detail__checkbox-span"></span>
+                  </div>
+                </label>
+                <label class="pay-detail__label pay-detail__checkbox-label">
+                  <span class="pay-detail__checkbox-text">Детская и/или спортивная площадка</span>
+                  <div class="pay-detail__checkbox-wrapper">
+                    <input type="checkbox" class="pay-detail__checkbox">
+                    <span class="pay-detail__checkbox-span"></span>
+                  </div>
+                </label>
+                <label class="pay-detail__label pay-detail__checkbox-label">
+                  <span class="pay-detail__checkbox-text">Внутридомовые рециркуляционные насосы горячего водоснабжения</span>
+                  <div class="pay-detail__checkbox-wrapper">
+                    <input type="checkbox" class="pay-detail__checkbox">
+                    <span class="pay-detail__checkbox-span"></span>
+                  </div>
+                </label>
+                <label class="pay-detail__label pay-detail__checkbox-label">
+                  <span class="pay-detail__checkbox-text">Внутридомовая пожарная или пожарно-охранная сигнализация</span>
+                  <div class="pay-detail__checkbox-wrapper">
+                    <input type="checkbox" class="pay-detail__checkbox">
+                    <span class="pay-detail__checkbox-span"></span>
+                  </div>
+                </label>
+                <label class="pay-detail__label pay-detail__checkbox-label">
+                  <span class="pay-detail__checkbox-text">Внутридомовая автоматизированная система коммерческого учета
+                    электроэнергии и (или) теплоснабжения и (или) горячего
+                    водоснабжения и (или) холодного водоснабжения</span>
+                  <div class="pay-detail__checkbox-wrapper">
+                    <input type="checkbox" class="pay-detail__checkbox">
+                    <span class="pay-detail__checkbox-span"></span>
+                  </div>
+                </label>
+                <label class="pay-detail__label pay-detail__checkbox-label">
+                  <span class="pay-detail__checkbox-text">Узел(узлы) учета и (или) система автоматического регулирования
+                    (АСКУЭ)</span>
+                  <div class="pay-detail__checkbox-wrapper">
+                    <input type="checkbox" class="pay-detail__checkbox">
+                    <span class="pay-detail__checkbox-span"></span>
+                  </div>
+                </label>
+                <label class="pay-detail__label pay-detail__checkbox-label">
+                  <span class="pay-detail__checkbox-text">Уборка лестничных клеток</span>
+                  <div class="pay-detail__checkbox-wrapper">
+                    <input type="checkbox" class="pay-detail__checkbox">
+                    <span class="pay-detail__checkbox-span"></span>
+                  </div>
+                </label>
+              </div>
+              <button class="pay-detail__btn">ДЕТАЛИЗАЦИЯ</button>
+            </form>
+          </div>
+        </div>
+
         <!------------Content-3------------------------------------------------------------->
 
-        <div class="tabs__content-item" id="tab-3">
+        <div class="tabs__content-item tabs__content-item__table" id="tab-3">
           <table class="base-table">
             <thead class="base-table__head">
               <tr>
@@ -576,7 +591,7 @@
                 <th scope="col">Управляющая организация</th>
                 <th scope="col">Адрес</th>
                 <th scope="col">Дата</th>
-              <th scope="col">Подробнее</th>
+                <th scope="col">Подробнее</th>
               </tr>
             </thead>
             <tbody class="base-table__body">
