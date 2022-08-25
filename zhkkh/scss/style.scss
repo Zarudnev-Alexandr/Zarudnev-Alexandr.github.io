@@ -37,6 +37,21 @@
   max-width: 70px;
   max-height: 80px;
   padding-left: 50px;
+  &__link{
+    svg{
+      max-width: 70px;
+      max-height: 80px;
+      .st2:hover{
+        stroke: $accent-color;
+      }
+      .st3:hover{
+        stroke: $accent-color;
+      }
+      .st4:hover{
+        stroke: $accent-color;
+      }
+    }
+  }
 }
 
 
