@@ -6,7 +6,7 @@
 
 .header{
   background-color: #1f487e;
-  padding: 15px 0;
+  padding: 5px 0;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -29,18 +29,16 @@
         }
         
       }
-    }
-    
+    }    
   }
 }
 
-.logo__img{
+.logo{  
   max-width: 70px;
+  max-height: 80px;
+  padding-left: 50px;
 }
 
-.logo__link{
-  padding-left: 80px;
-}
 
 body{
   position: relative;
@@ -128,37 +126,42 @@ body{
   background-image: url('../images/slider-background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 170px 0 60px 0;
-  &__content{
-    max-width: 700px; 
-    color: #000;   
-    margin: auto 0;
+  &__title{
+    padding-top: 50px;
+    position: relative;
+    display: flex;
+    &::after{
+      content:'';
+      position: absolute;
+      background-color: $accent-color;
+      bottom: -6px;
+      left: 0;
+      height: 1px;
+      width: 410px;
+    }
   }
   &__item{
     display: flex !important;
     justify-content: space-between;
-    padding: 0 300px 0 350px;
-    
-  }
-  &__title{
-    font-size: 60px;
-    padding-bottom: 20px;
+    align-items: center;
+    padding: 100px 0;
   }
   &__text{
-    max-width: 500px;
-    padding-bottom: 30px;
+    color: #000;
+    max-width: 600px;
+    font-size: 18px;
+    line-height: 1.8;
+    text-indent: 15px;
+    display: block;
   }
-  &__link{
-    @extend %btn;
-  }
-  &__img{
-    height: 250px;
+  &__imgbox{
+    max-width: 450px;
   }
   .slick-dots{
     display: flex;
     justify-content: center;
-    margin-top: 80px;
     transform: translateZ(10);
+    margin-bottom: 0;
     li{
       button{
         padding: 0;
@@ -175,6 +178,7 @@ body{
       }
     }
     .slick-active{
+      padding-bottom: 25px;
       button{
         border-color: $accent-color;
         position: relative;
@@ -198,7 +202,6 @@ body{
 .tabs{
   padding-top: 50px;
   padding-bottom: 50px;
-  //background-image: url('../images/content-background.png');
   background-color: rgb(223, 223, 223);;
   &__top{
     display: grid;
@@ -235,8 +238,11 @@ body{
     margin-bottom: 15px;
   }
   &__content-switch__text{
-    font-size: 18px;
+    font-size: 19px;
     color: #a5a7a8;
+    &--active{
+      color: #000;
+    }
   }
   &__content-switch__label{
     padding: 0 10px;
@@ -283,7 +289,7 @@ body{
 }
 
 .pay-detail{
-  font-size: 18px;
+  font-size: 19px;
   &__input-wrapper{
     display: grid;
     grid-template-columns: 50% 50%;
@@ -301,6 +307,9 @@ body{
     margin-top: 4px;
     height: 60px;
     padding: 0 15px;
+    &:invalid{
+      border: 1px solid $accent-color;
+    }    
   }
   &__btn{
     display: block;

@@ -7,7 +7,7 @@ $(function(){
     $('body').toggleClass('header--menu');
   });
 
-  $('.top-slider__inner').slick({
+  $('.top-slider__wrapper').slick({
     dots: true,
     arrows: false,
     fade: true,
@@ -36,14 +36,17 @@ $(function(){
     }
   });
 
-  $('.pay-detail__label').on('click', function(){
+ /*  $('.pay-detail__label').on('click', function(){
     $(this).toggleClass('span--active');
-  });
+  }); */
+
+  $('.tabs__content-switch__label').on('click', function () {
+    $(".tabs__content-switch__text").toggleClass("tabs__content-switch__text--active");
+  });  
 
   $(".address").suggestions({
     token: "6a17cd66d7e8283bf152d75f89e61bf198e79433",
     type: "ADDRESS",
-    /* Вызывается, когда пользователь выбирает одну из подсказок */
     onSelect: function (suggestion) {
       console.log(suggestion);
     }
