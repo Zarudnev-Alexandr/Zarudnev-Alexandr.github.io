@@ -326,6 +326,9 @@ body{
       border: 1px solid $accent-color;
     }    
   }
+  &__equipment-title{
+    font-weight: bold;
+  }
   &__btn{
     display: block;
     @extend %btn;
